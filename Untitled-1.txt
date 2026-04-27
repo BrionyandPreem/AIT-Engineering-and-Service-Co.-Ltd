@@ -1,0 +1,802 @@
+// 1. ข้อมูลสินค้า
+const products = [
+    { 
+        name: "304 Manifold Accessory",
+        sku: "304",
+        category: "Valve Accessories",
+        categoryTag: "valve-accessories",
+        img: "img/304.png",
+        desc: "<p>รายละเอียดของรุ่น 304...</p>"
+    },
+    {
+        name: "306 Manifold Accessory",
+        sku: "306",
+        category: "Valve Accessories",
+        categoryTag: "valve-accessories",
+        img: "img/306.png",
+        desc: "<p>รายละเอียดของรุ่น 306...</p>"
+    },
+    {
+        name: "114C Thermowell",
+        sku: "114C",
+        category: "Temperature",
+        categoryTag: "instrument",
+        img: "img/114c.png",
+        desc: "<p>Engineered with solid barstock...</p><ul><li>High strength</li></ul>"
+    },
+    {
+        name: "2051C Series",
+        sku: "2051C",
+        category: "Pressure",
+        categoryTag: "actuator",
+        img: "img/2051c.png",
+        desc: "<p>รายละเอียดของรุ่น 2051C...</p>"
+    }
+];
+
+// 2. ตัวแปรตะกร้า
+let cart = JSON.parse(localStorage.getItem('aitCart')) || [];
+
+// 3. ฟังก์ชันแสดงสินค้า (เพิ่มปุ่ม Add to Cart ให้แล้วครับ)
+function renderProducts() {
+    const grid = document.getElementById('productGrid');
+    if (!grid) return; // กันเหนียวถ้าหา ID ไม่เจอ
+    grid.innerHTML = "";
+
+    products.forEach(item => {
+        const card = `
+            <div class="product-card group" data-name="${item.name.toLowerCase()}" data-category="${item.categoryTag}">
+                <div class="aspect-square bg-gray-50 mb-4 flex items-center justify-center p-4">
+                    <img src="${item.img}" alt="${item.name}" class="max-h-full group-hover:scale-110 transition duration-300">
+                </div>
+                <h3 onclick="openModal('${item.name}', '${item.sku}', '${item.category}', '${item.desc}', '${item.img}')" 
+                    class="text-sm font-medium text-gray-800 mb-1 cursor-pointer hover:text-blue-600 transition">
+                    ${item.name}
+                </h3>
+                <p onclick="openModal('${item.name}', '${item.sku}', '${item.category}', '${item.desc}', '${item.img}')" 
+                    class="text-blue-400 text-xs mb-4 cursor-pointer hover:underline">
+                    Read more
+                </p>
+                <button onclick="addToCart('${item.name}', '${item.img}')" class="bg-orange-500 text-white px-4 py-1.5 text-[11px] rounded font-bold shadow-sm hover:bg-orange-600 transition">
+                    <i class="fa-solid fa-plus mr-1"></i> Add to Cart
+                </button>
+            </div>
+        `;
+        grid.innerHTML += card;
+    });
+}
+
+// 4. ระบบตะกร้า
+function toggleCart() {
+    const drawer = document.getElementById('cart-drawer');
+    const overlay = document.getElementById('cart-overlay');
+    if (drawer && overlay) {
+        drawer.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    }
+}
+
+function addToCart(productName, productImg) {
+    const existingItem = cart.find(item => item.name === productName);
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ name: productName, img: productImg, quantity: 1 });
+    }
+    updateCartUI();
+}
+
+function updateCartUI() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    const cartCount = document.getElementById('cart-count');
+    const cartTotal = document.getElementById('cart-total');
+
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    if(cartCount) cartCount.innerText = totalItems;
+    if(cartTotal) cartTotal.innerText = totalItems + " ชิ้น";
+
+    if (cart.length === 0) {
+        cartItemsDiv.innerHTML = `<p class="text-center text-gray-400 mt-10">ตะกร้าของคุณยังว่างอยู่...</p>`;
+    } else {
+        cartItemsDiv.innerHTML = cart.map((item, index) => `
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden border">
+                    <img src="${item.img}" class="w-full h-full object-contain">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p class="font-bold text-gray-800 text-[11px] truncate">${item.name}</p>
+                    <div class="flex items-center gap-2 mt-1">
+                        <button onclick="changeQty(${index}, -1)" class="w-5 h-5 bg-gray-100 rounded text-xs">-</button>
+                        <span class="text-xs font-bold">${item.quantity}</span>
+                        <button onclick="changeQty(${index}, 1)" class="w-5 h-5 bg-gray-100 rounded text-xs">+</button>
+                    </div>
+                </div>
+                <button onclick="removeItem(${index})" class="text-gray-300 hover:text-red-500 p-2">
+                    <i class="fa-solid fa-trash-can text-xs"></i>
+                </button>
+            </div>
+        `).join('');
+    }
+    localStorage.setItem('aitCart', JSON.stringify(cart));
+}
+
+function changeQty(index, amount) {
+    cart[index].quantity += amount;
+    if (cart[index].quantity <= 0) cart.splice(index, 1);
+    updateCartUI();
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+}
+
+// 5. ระบบ Modal
+function openModal(name, sku, cats, desc, imgSrc) {
+    document.getElementById('modalTitle').innerText = name;
+    document.getElementById('modalSku').innerText = "SKU: " + sku;
+    document.getElementById('modalCats').innerText = cats;
+    document.getElementById('modalDesc').innerHTML = desc;
+    document.getElementById('modalImg').src = imgSrc;
+    document.getElementById('modalAddToCartBtn').onclick = () => addToCart(name, imgSrc);
+    document.getElementById('productModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('productModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// 6. ระบบคัดกรอง
+function filterByCategory(categoryName) {
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (categoryName === 'all' || itemCat === categoryName) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+// 7. สั่งให้ทำงานพร้อมกันเมื่อโหลดหน้าเว็บ
+window.onload = function() {
+    renderProducts(); // วาดสินค้า
+    updateCartUI();   // วาดตะกร้า (จากข้อมูลที่จำไว้)
+};
+
+
+<section class="bg-[#345e82] py-16 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Bangkok Head office Address</h2>
+                    
+                    <div class="mt-8 space-y-8 text-sm leading-relaxed">
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
+                            <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
+                            <p class="text-gray-100">TEL : +66 2 9182060</p>
+                            <p class="text-gray-100">Fax : +66 2 918 2062</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
+                            <a href="mailto:info@aitengineering.co.th" class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
+                    <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                    <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
+                    
+                    <form class="space-y-5">
+                        <div class="grid grid-cols-1 gap-5">
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full Name</label>
+                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
+                                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
+                                    <input type="text" placeholder="Tel" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
+                                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
+                                <textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
+                            <div class="space-y-2 text-sm text-gray-200">
+                                <label class="flex items-center cursor-pointer group">
+                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                    <span class="group-hover:text-white transition">info@aitengineering.co.th</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer group">
+                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                    <span class="group-hover:text-white transition">support@aitengineering.co.th</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AIT Engineering and Service</title>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex flex-col items-center">
+                <div class="flex space-x-1 text-4xl font-black italic">
+                    <span class="text-orange-500">a</span><span class="text-blue-600">i</span><span class="text-green-500">t</span>
+                </div>
+                <p class="text-[10px] text-blue-800 font-bold uppercase tracking-tighter">Engineering and Service</p>
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
+                <a href="About.html" class="hover:text-orange-500">About Us <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="1measurement.html" class="hover:text-orange-500">Products & Services <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="Videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="Activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="contact.html" class="hover:text-orange-500">Contact <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+            </nav>
+
+            <div class="bg-gray-100 p-2 rounded">
+                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            </div>
+        </div>
+    </header>
+    
+<div class="bg-white min-h-screen font-sans text-gray-700">
+    
+    <section class="bg-[#5a9ad4] py-8 text-center">
+        <h1 class="text-white text-4xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
+        
+        <div class="container mx-auto mt-6 flex flex-wrap justify-center gap-2 px-4">
+            <a href="index.html"><button class="bg-[#ff6600] text-white px-6 py-2 text-xs font-bold uppercase rounded shadow-sm">Home</button></a>
+            <a href="#khonkaen"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Khonkaen Branch</button></a>
+            <a href="#ratchaburi"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Ratchaburi Branch</button></a>
+            <a href="#rayong"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Rayong Branch</button></a>
+            <a href="contact.html"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition border-b-2 border-white">Bangkok (Head Office)</button></a>
+        </div>
+    </section>
+
+    <section class="bg-[#345e82] py-16 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Bangkok Head office Address</h2>
+                    
+                    <div class="mt-8 space-y-8 text-sm leading-relaxed">
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
+                            <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
+                            <p class="text-gray-100">TEL : +66 2 9182060</p>
+                            <p class="text-gray-100">Fax : +66 2 918 2062</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
+                            <a href="mailto:info@aitengineering.co.th" class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
+                    <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                    <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
+                    
+                    <form class="space-y-5">
+                        <div class="grid grid-cols-1 gap-5">
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full Name</label>
+                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
+                                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
+                                    <input type="text" placeholder="Tel" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
+                                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
+                                <textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
+                            <div class="space-y-2 text-sm text-gray-200">
+                                <label class="flex items-center cursor-pointer group">
+                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                    <span class="group-hover:text-white transition">info@aitengineering.co.th</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer group">
+                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                    <span class="group-hover:text-white transition">support@aitengineering.co.th</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="bg-[#0a2540] py-10 text-white text-center">
+    <div class="container mx-auto px-4">
+        
+        <div class="mb-6">
+            <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+            <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="#" class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+            <p>
+                WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+            </p>
+            <p class="text-sm font-medium">
+                +66 2 9182060
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
+
+**********************************************sub searching**************************************************************************************
+<aside class="w-full lg:w-1/4">
+    <div class="bg-white p-6 shadow-sm border border-gray-100 rounded-lg">
+        <h3 class="font-bold text-gray-700 mb-4 border-b pb-2">หมวดหมู่สินค้า</h3>
+        <ul class="space-y-2">
+            <li>
+                <button onclick="toggleSubMenu('measurement-sub')" class="w-full flex justify-between items-center py-2 px-3 hover:bg-blue-50 rounded transition group">
+                    <span class="text-sm font-medium">Measurement and Instrumentation</span>
+                    <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300" id="icon-measurement-sub"></i>
+                </button>
+                <ul id="measurement-sub" class="hidden ml-6 mt-1 space-y-1 border-l-2 border-blue-100 pl-4">
+                    <li>
+                        <button onclick="toggleSubMenu('transducers-sub')" class="w-full flex justify-between items-center py-1 text-xs text-gray-600 hover:text-blue-600">
+                            <span>Transducers, Converters...</span>
+                            <i class="fa-solid fa-chevron-right text-[8px]" id="icon-transducers-sub"></i>
+                        </button>
+                        <ul id="transducers-sub" class="hidden ml-4 mt-1 space-y-1 text-[11px] text-gray-500 italic">
+                            <li><a href="#" onclick="filterBySub('KINEAX')" class="hover:text-blue-500">- KINEAX (2)</a></li>
+                            <li><a href="#" onclick="filterBySub('SINEAX')" class="hover:text-blue-500">- SINEAX (3)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="filterBySub('Flow')" class="text-xs text-gray-600 hover:text-blue-600">Flow (13)</a></li>
+                </ul>
+            </li>
+            </ul>
+    </div>
+</aside>
+********************************************************************js***********************************************************************************
+let products = []; 
+let filteredProducts = [];
+let currentPage = 1;      
+const itemsPerPage = 20;  
+//1
+const path = window.location.pathname;
+const page = path.split("/").pop(); 
+
+let currentPageName = "";
+
+if (page.includes("1measurement.html") || page === "index.html") {
+    currentPageName = "measurement";
+} else if (page.includes("2valves.html")) {
+    currentPageName = "valves";
+}
+
+async function loadProducts() {
+    try {
+        const response = await fetch('products.json');
+        const allProducts = await response.json();
+        
+        products = allProducts.filter(item => item.page === currentPageName);
+        
+        filteredProducts = [...products]; 
+        console.log(`Success: ${currentPageName} items loaded:`, products);
+        
+        renderProducts(); 
+    } catch (error) {
+        console.error("Failed to load data:", error);
+    }
+}
+//2
+let cart = JSON.parse(localStorage.getItem('aitCart')) || [];
+//3
+function renderProducts() {
+    const grid = document.getElementById('productGrid');
+    if (!grid) return; 
+    grid.innerHTML = "";
+
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const paginatedItems = filteredProducts.slice(start, end);
+
+    // ส่วนนับเลขสินค้าอัตโนมัติ
+    const totalCount = filteredProducts.length;
+    const showingCount = Math.min(end, totalCount); 
+    const showingStart = totalCount === 0 ? 0 : start + 1;
+
+    const currentElement = document.getElementById('current-showing');
+    const totalElement = document.getElementById('total-products');
+    
+    if (currentElement) currentElement.innerText = `${showingStart}-${showingCount}`;
+    if (totalElement) totalElement.innerText = totalCount;
+
+    if (paginatedItems.length === 0) {
+        grid.innerHTML = `<p class="col-span-full text-center text-gray-400 py-20">No products found in this category</p>`;
+    }
+
+    paginatedItems.forEach(item => {
+        const card = `
+            <div class="product-card group text-center flex flex-col items-center" data-category="${item.categoryTag}">
+                <div class="h-40 w-full bg-gray-50 mb-4 flex items-center justify-center p-4 overflow-hidden">
+                    <img src="${item.img}" alt="${item.name}" class="max-h-full group-hover:scale-110 transition duration-300">
+                </div>
+                <h3 onclick="openModal('${item.name}', '${item.sku}', '${item.category}', '${item.desc}', '${item.img}')" 
+                    class="text-sm font-medium text-gray-800 mb-1 cursor-pointer hover:text-blue-600 transition">
+                    ${item.name}
+                </h3>
+                <p onclick="openModal('${item.name}', '${item.sku}', '${item.category}', '${item.desc}', '${item.img}')" 
+                    class="text-blue-400 text-xs mb-4 cursor-pointer hover:underline">
+                    Read more
+                </p>
+                <button onclick="addToCart('${item.name}', '${item.img}')" class="bg-orange-500 text-white px-4 py-1.5 text-[11px] rounded font-bold shadow-sm hover:bg-orange-600 transition">
+                    <i class="fa-solid fa-plus mr-1"></i> Add to Cart
+                </button>
+            </div>
+        `;
+        grid.innerHTML += card;
+    });
+
+    renderPagination();
+}
+
+function renderPagination() {
+    const paginationDiv = document.getElementById('pagination-controls');
+    if (!paginationDiv) return;
+    
+    const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+    let paginationHtml = "";
+
+    if (totalPages > 1) {
+        for (let i = 1; i <= totalPages; i++) {
+            paginationHtml += `
+                <button onclick="changePage(${i})" 
+                    class="px-4 py-2 mx-1 rounded border ${currentPage === i ? 'bg-green-600 text-white' : 'bg-white text-gray-600 hover:bg-green-50'}">
+                    ${i}
+                </button>
+            `;
+        }
+    }
+    paginationDiv.innerHTML = paginationHtml;
+}
+
+function changePage(page) {
+    currentPage = page;
+    
+    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?page=' + page;
+    window.history.pushState({path:newurl}, '', newurl);
+    
+    renderProducts();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+//4
+function toggleCart() {
+    const drawer = document.getElementById('cart-drawer');
+    const overlay = document.getElementById('cart-overlay');
+    if (drawer && overlay) {
+        drawer.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    }
+}
+
+function addToCart(productName, productImg) {
+    const existingItem = cart.find(item => item.name === productName);
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ name: productName, img: productImg, quantity: 1 });
+    }
+    updateCartUI();
+}
+
+function updateCartUI() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    const cartCount = document.getElementById('cart-count');
+    const cartTotal = document.getElementById('cart-total');
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    if(cartCount) cartCount.innerText = totalItems;
+    if(cartTotal) cartTotal.innerText = totalItems + " items";
+
+    if (cart.length === 0) {
+        cartItemsDiv.innerHTML = `<p class="text-center text-gray-400 mt-10">Your shopping cart is empty...</p>`;
+    } else {
+        cartItemsDiv.innerHTML = cart.map((item, index) => `
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm">
+                <div class="w-12 h-12 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden border">
+                    <img src="${item.img}" class="w-full h-full object-contain">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p class="font-bold text-gray-800 text-[11px] truncate">${item.name}</p>
+                    <div class="flex items-center gap-2 mt-1">
+                        <button onclick="changeQty(${index}, -1)" class="w-5 h-5 bg-gray-100 rounded text-xs">-</button>
+                        <span class="text-xs font-bold">${item.quantity}</span>
+                        <button onclick="changeQty(${index}, 1)" class="w-5 h-5 bg-gray-100 rounded text-xs">+</button>
+                    </div>
+                </div>
+                <button onclick="removeItem(${index})" class="text-gray-300 hover:text-red-500 p-2">
+                    <i class="fa-solid fa-trash-can text-xs"></i>
+                </button>
+            </div>
+        `).join('');
+    }
+    localStorage.setItem('aitCart', JSON.stringify(cart));
+}
+
+function changeQty(index, amount) {
+    cart[index].quantity += amount;
+    if (cart[index].quantity <= 0) cart.splice(index, 1);
+    updateCartUI();
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+}
+
+//5
+function openModal(name, sku, cats, desc, imgSrc) {
+    if(document.getElementById('modalTitle')) document.getElementById('modalTitle').innerText = name;
+    if(document.getElementById('modalSku')) document.getElementById('modalSku').innerText = "SKU: " + sku;
+    if(document.getElementById('modalCats')) document.getElementById('modalCats').innerText = cats;
+    if(document.getElementById('modalDesc')) document.getElementById('modalDesc').innerHTML = desc;
+    if(document.getElementById('modalImg')) document.getElementById('modalImg').src = imgSrc;
+    
+    if(document.getElementById('modalBreadcrumb')) {
+        document.getElementById('modalBreadcrumb').innerText = `Home / Products / ${cats}`;
+    }
+
+    const modalBtn = document.getElementById('modalAddToCartBtn');
+    if(modalBtn) {
+        modalBtn.onclick = () => {
+            addToCart(name, imgSrc);
+            closeModal();
+        };
+    }
+
+    const modal = document.getElementById('productModal');
+    if(modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('productModal');
+    if(modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+    document.body.style.overflow = 'auto';
+}
+
+//6
+function filterByCategory(categoryName) {
+    const searchCat = categoryName.toLowerCase().trim();
+    
+    if (searchCat === 'all' || searchCat === 'all categories') {
+        filteredProducts = [...products];
+    } else {
+        filteredProducts = products.filter(item => {
+            const tags = String(item.categoryTag).toLowerCase();
+            return tags.includes(searchCat);
+        });
+    }
+    
+    currentPage = 1;
+    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+    window.history.pushState({path:newurl}, '', newurl);
+    
+    renderProducts();
+}
+//6.5
+function filterBySub(subName) {
+    filteredProducts = products.filter(item => item.subCategory === subName);
+
+    currentPage = 1;
+
+    renderProducts();
+
+    if(document.getElementById('categoryTitle')) {
+        document.getElementById('categoryTitle').innerText = subName.toUpperCase();
+    }
+}
+
+//7
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageFromUrl = parseInt(urlParams.get('page'));
+    
+    if (pageFromUrl) {
+        currentPage = pageFromUrl;
+    } else {
+        currentPage = 1;
+    }
+
+    loadProducts(); 
+    updateCartUI(); 
+};
+//8
+function searchProducts() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+
+    filteredProducts = products.filter(item => {
+        const nameMatch = item.name.toLowerCase().includes(searchTerm);
+        const skuMatch = item.sku ? item.sku.toLowerCase().includes(searchTerm) : false;
+        
+        return nameMatch || skuMatch;
+    });
+
+    currentPage = 1;
+
+    renderProducts();
+}
+
+function searchSidebarProducts() {
+    const searchTerm = document.getElementById('sidebarSearchInput').value.toLowerCase().trim();
+
+    filteredProducts = products.filter(item => {
+        const nameMatch = item.name.toLowerCase().includes(searchTerm);
+        const skuMatch = item.sku ? item.sku.toLowerCase().includes(searchTerm) : false;
+        return nameMatch || skuMatch;
+    });
+
+    currentPage = 1;
+    renderProducts();
+}
+//9
+function updateSidebar(mode) {
+    const sidebarUl = document.getElementById('sidebarMenu');
+    if (!sidebarUl) return;
+    
+    if (mode === 'main') {
+        sidebarUl.innerHTML = `
+            <li onclick="loadSubCategory('pressure')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                Pressure and Level <span>(15)</span>
+            </li>
+            <li onclick="loadSubCategory('transducer')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                Transducers, Converters... <span>(19)</span>
+            </li>
+            `;
+        if(document.getElementById('backBtn')) document.getElementById('backBtn').classList.add('hidden');
+        if(document.getElementById('sidebarTitle')) document.getElementById('sidebarTitle').innerText = "หมวดหมู่สินค้า";
+    } 
+    else if (mode === 'transducer') {
+        sidebarUl.innerHTML = `
+            <li onclick="filterBySub('KINEAX')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer italic">- KINEAX (2)</li>
+            <li onclick="filterBySub('SINEAX')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer italic">- SINEAX (3)</li>
+        `;
+        if(document.getElementById('backBtn')) document.getElementById('backBtn').classList.remove('hidden');
+        if(document.getElementById('sidebarTitle')) document.getElementById('sidebarTitle').innerText = "Measurement ";
+    }
+}
+
+function loadSubCategory(catName) {
+    updateSidebar(catName);
+    
+    filteredProducts = products.filter(item => item.subCategory === catName); 
+    renderProducts();
+    
+    if(document.getElementById('categoryTitle')) {
+        document.getElementById('categoryTitle').innerText = catName.toUpperCase();
+    }
+}

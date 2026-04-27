@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AIT Engineering and Service</title>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
+        </div>
+
+        <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+            <a href="index.html" class="hover:text-orange-500 transition">Home</a>
+            <a href="About.html" class="hover:text-orange-500 transition">About Us</a>
+            <a href="pro1.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Products & Services</a>
+            <a href="videos.html" class="hover:text-orange-500 transition">Videos</a>
+            <a href="activities.html" class="hover:text-orange-500 transition">Activities</a>
+            <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+        </nav>
+
+        <div class="flex items-center space-x-2">
+            <div class="bg-gray-100 p-2 rounded cursor-pointer hover:bg-gray-200 transition">
+                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            </div>
+
+            <button onclick="toggleCart()" class="relative p-2 text-gray-600 hover:text-blue-600 transition">
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+                <span id="cart-count" class="absolute top-0 right-0 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div id="cart-drawer" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-[100] flex flex-col">
+        <div class="p-4 bg-[#1a4066] text-white flex justify-between items-center">
+            <h2 class="font-bold">ตะกร้าสินค้าของคุณ</h2>
+            <button onclick="toggleCart()" class="text-2xl hover:text-orange-400">&times;</button>
+        </div>
+        
+        <div id="cart-items" class="flex-1 overflow-y-auto p-4 space-y-4 text-sm text-gray-600">
+            <p class="text-center text-gray-400 mt-10">ตะกร้าของคุณยังว่างอยู่...</p>
+        </div>
+
+        <div class="p-4 border-t border-gray-200 bg-gray-50">
+            <div class="flex justify-between font-bold text-gray-800 mb-4">
+                <span>รวมทั้งหมด:</span>
+                <span id="cart-total">0 ชิ้น</span>
+            </div>
+            <button class="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition shadow-lg">
+                สั่งซื้อสินค้า / Checkout
+            </button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" onclick="toggleCart()" class="fixed inset-0 bg-black/50 hidden z-[90]"></div>
+    
+<div class="bg-gray-50 min-h-screen pb-12">
+    
+    <div class="container mx-auto px-4 py-4 text-xs text-gray-500">
+        <a href="index.html" class="text-blue-500 hover:underline">Home</a> / Measurement and instrumentation
+    </div>
+
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+            
+            <aside class="w-full lg:w-1/4">
+                <div class="bg-white p-6 shadow-sm border-t-2 border-blue-600 mb-6">
+                    <h3 class="text-center font-bold text-gray-700 mb-4">ค้นหา</h3>
+                    <div class="flex border rounded overflow-hidden">
+                        <select class="bg-gray-50 text-[10px] px-2 border-r focus:outline-none">
+                            <option>All Categories</option>
+                        </select>
+                        <input type="text" placeholder="Search..." class="flex-1 px-3 py-2 text-sm focus:outline-none">
+                        <button class="bg-white px-3 text-gray-400">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm border border-gray-100">
+                    <div class="bg-gray-50 py-3 px-4 border-b">
+                        <h3 class="text-center font-bold text-gray-700 text-sm">หมวดหมู่สินค้า</h3>
+                    </div>
+                    <ul class="text-xs text-gray-600">
+                        <li onclick="filterByCategory('pressure')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Pressure and Level <span>(15)</span>
+                        </li>
+                        <li onclick="filterByCategory('temperature')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Temperature <span>(6)</span>
+                        </li>
+                        <li onclick="filterByCategory('flow')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Flow <span>(13)</span>
+                        </li>
+                        <li onclick="filterByCategory('density')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Density and Viscosity <span>(10)</span>
+                        </li>
+                        <li onclick="filterByCategory('transducer')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Transducers, Converters, Angular Position <span>(5)</span>
+                        </li>
+                        <li onclick="filterByCategory('analyzer')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Analyzer <span>(8)</span>
+                        </li>
+                        <li onclick="filterByCategory('mass-flow')" class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
+                            Mass flow <span>(5)</span>
+                        </li>  
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="w-full lg:w-3/4">
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl font-medium text-gray-800 mb-2">Measurement and instrumentation</h1>
+                    <div class="w-16 h-[2px] bg-blue-500 mx-auto"></div>
+                </div>
+
+                <div class="flex justify-between items-center mb-8 text-sm text-gray-600">
+                    <p>Showing 1–20 of 53 results</p>
+                    <select class="border rounded px-3 py-1 focus:outline-none bg-white">
+                        <option>Default sorting</option>
+                    </select>
+                </div>
+
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-4">
+
+    <div class="text-center flex flex-col items-center group">
+        <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
+            <img src="imgpro/304_Manifold_Accessory.jpg" alt="Product" class="max-h-full group-hover:scale-110 transition duration-300">
+        </div>
+    <div class="product-card group" data-name="304 Manifold Accessory">
+    <h3 class="text-sm font-medium text-gray-800 mb-1">
+        304 Manifold Accessory
+    </h3>
+    <p onclick="openModal(
+            '304 Manifold Accessory', 
+            '304', 
+            'Measurement, Temperature', 
+            '<p>---</p><ul><li>High strength</li><li>Reliable integrity</li></ul>', 
+            'imgpro/304_Manifold_Accessory.jpg'
+        )" 
+        class="text-blue-400 text-xs mb-4 cursor-pointer hover:underline">
+        Read more
+    </p>
+    </div>
+        <button onclick="addToCart('304 Manifold Accessory')" class="bg-orange-500 text-white px-4 py-1.5 text-[11px] rounded hover:bg-orange-600 transition font-bold shadow-sm">
+            <i class="fa-solid fa-plus mr-1"></i> Add to Cart
+        </button>
+    </div>
+
+
+
+    <div class="text-center flex flex-col items-center group">
+        <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
+            <img src="imgpro/114C.jpg" alt="Product" class="max-h-full group-hover:scale-110 transition duration-300">
+        </div>
+    <div class="product-card group" data-name="114C Thermowell">
+    <h3 class="text-sm font-medium text-gray-800 mb-1">
+        114C Thermowell
+    </h3>
+    <p onclick="openModal(
+            '114C Thermowell', 
+            '114C', 
+            'Measurement, Temperature', 
+            '<p>Engineered with solid barstock, the Rosemount 114C is designed to accommodate a host of industry-standard configurations.</p><ul><li>High strength</li><li>Reliable integrity</li></ul>', 
+            'imgpro/114C.jpg'
+        )" 
+        class="text-blue-400 text-xs mb-4 cursor-pointer hover:underline">
+        Read more
+    </p>
+    </div>
+        <button onclick="addToCart('114C Thermowell')" class="bg-orange-500 text-white px-4 py-1.5 text-[11px] rounded hover:bg-orange-600 transition font-bold shadow-sm">
+            <i class="fa-solid fa-plus mr-1"></i> Add to Cart
+        </button>
+    </div>
+
+    <div class="text-center flex flex-col items-center group">
+        <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
+            <img src="2051C_Series.jpg" alt="Product" class="max-h-full group-hover:scale-110 transition duration-300">
+        </div>
+        <h3 class="text-sm font-medium text-gray-800 mb-1">2051C Series</h3>
+        <p class="text-blue-400 text-xs mb-4">Transmitter</p>
+        <button onclick="addToCart('2051C Series')" class="bg-orange-500 text-white px-4 py-1.5 text-[11px] rounded hover:bg-orange-600 transition font-bold shadow-sm">
+            <i class="fa-solid fa-plus mr-1"></i> Add to Cart
+        </button>
+    </div>
+</div>
+
+                <div class="mt-16 flex justify-center space-x-1">
+                    <span class="px-4 py-2 bg-gray-200 text-gray-600 text-sm font-bold border cursor-default">1</span>
+                    <a href="#" class="px-4 py-2 bg-white text-gray-600 text-sm border hover:bg-gray-100 transition">2</a>
+                    <a href="#" class="px-4 py-2 bg-white text-gray-600 text-sm border hover:bg-gray-100 transition">3</a>
+                    <a href="#" class="px-4 py-2 bg-white text-gray-600 text-sm border hover:bg-gray-100 transition">→</a>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</div>
+
+<div class="fixed bottom-6 right-6">
+    <button class="bg-blue-600 text-white w-10 h-10 rounded shadow-lg flex items-center justify-center hover:bg-blue-700 transition">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+</div>
+
+<footer class="bg-[#0a2540] py-10 text-white text-center">
+    <div class="container mx-auto px-4">
+        
+        <div class="mb-6">
+            <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+            <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="#" class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                    <i class="fa-brands fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+            <p>
+                WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+            </p>
+            <p class="text-sm font-medium">
+                +66 2 9182060
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    let cart = [];
+
+    function toggleCart() {
+        const drawer = document.getElementById('cart-drawer');
+        const overlay = document.getElementById('cart-overlay');
+        drawer.classList.toggle('translate-x-full');
+        overlay.classList.toggle('hidden');
+    }
+
+    function addToCart(productName) {
+        cart.push(productName);
+        updateCartUI();
+        // ถ้าอยากให้กดปุ๊บ ตะกร้าเด้งเปิดโชว์ทันที ให้เอา // ออกข้างหน้าบรรทัดล่างนี้ค่ะ
+        // toggleCart(); 
+    }
+
+    function updateCartUI() {
+        const cartItemsDiv = document.getElementById('cart-items');
+        const cartCount = document.getElementById('cart-count'); // ตัวเลขบนไอคอนรถเข็น
+        const cartTotal = document.getElementById('cart-total'); // ข้อความสรุปด้านล่าง
+
+        // อัปเดตตัวเลขจำนวนสินค้า
+        cartCount.innerText = cart.length;
+        if(cartTotal) {
+            cartTotal.innerText = cart.length + " ชิ้น";
+        }
+
+        if (cart.length === 0) {
+            cartItemsDiv.innerHTML = `
+                <div class="text-center py-20">
+                    <i class="fa-solid fa-cart-shopping text-5xl text-gray-100 mb-4"></i>
+                    <p class="text-gray-400 font-medium">ตะกร้าของคุณยังว่างอยู่ค่ะ</p>
+                </div>`;
+        } else {
+            cartItemsDiv.innerHTML = cart.map((item, index) => `
+                <div class="flex justify-between items-center bg-gray-50 p-4 rounded-2xl border border-gray-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                            <i class="fa-solid fa-box text-blue-500 text-xs"></i>
+                        </div>
+                        <span class="font-bold text-gray-700 text-sm">${item}</span>
+                    </div>
+                    <button onclick="removeItem(${index})" class="text-gray-300 hover:text-red-500 transition-colors">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+    }
+
+    function removeItem(index) {
+        cart.splice(index, 1);
+        updateCartUI();
+    }
+</script>
+
+<div id="productModal" class="fixed inset-0 bg-black/60 hidden flex items-center justify-center z-[100] p-4 backdrop-blur-sm">
+    <div class="bg-white w-full max-w-5xl max-h-[90vh] rounded-xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row">
+        
+        <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-white/80 hover:bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center transition">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+        <div class="w-full md:w-1/2 bg-gray-50 p-8 flex items-center justify-center border-r">
+            <img id="modalImg" src="" class="max-w-full max-h-full object-contain drop-shadow-md">
+        </div>
+
+        <div class="w-full md:w-1/2 p-8 overflow-y-auto">
+            <nav class="text-xs text-gray-400 mb-2 uppercase tracking-widest" id="modalBreadcrumb">Home / Products</nav>
+            <h2 id="modalTitle" class="text-3xl font-bold text-[#1a4066] mb-4"></h2>
+            
+            <div class="space-y-4 text-gray-600">
+                <p id="modalSku" class="text-sm font-mono bg-gray-100 inline-block px-2 py-1 rounded"></p>
+                
+                <div class="border-t border-b py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">Description</h4>
+                    <div id="modalDesc" class="text-sm leading-relaxed space-y-3">
+                        </div>
+                </div>
+
+                <div>
+                    <span class="text-xs font-bold text-gray-400">CATEGORIES:</span>
+                    <span id="modalCats" class="text-xs text-blue-600 ml-2"></span>
+                </div>
+            </div>
+
+            <button onclick="closeModal()" class="mt-8 w-full py-3 border-2 border-gray-200 rounded-lg font-bold hover:bg-gray-50 transition">
+                Close Details
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(name, sku, cats, desc, imgSrc) {
+        document.getElementById('modalTitle').innerText = name;
+        document.getElementById('modalSku').innerText = "SKU: " + sku;
+        document.getElementById('modalCats').innerText = cats;
+        document.getElementById('modalDesc').innerHTML = desc; // ใช้ innerHTML เพื่อให้ใส่ <p> หรือ <ul> ได้
+        document.getElementById('modalImg').src = imgSrc;
+        
+        document.getElementById('productModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // กันหน้าจอหลังเลื่อน
+    }
+
+    function closeModal() {
+        document.getElementById('productModal').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+
+    
+    function filterByCategory(categoryName) {
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        const itemCategory = product.getAttribute('data-category');
+
+        if (categoryName === 'all' || itemCategory === categoryName) {
+            product.classList.remove('hidden'); // แสดงสินค้าที่ตรงหมวด
+        } else {
+            product.classList.add('hidden'); // ซ่อนสินค้าที่ไม่เกี่ยว
+        }
+    });
+
+    // (แถม) ถ้ามีตัวเลือกใน Dropdown หลัก ก็ควรเปลี่ยนค่าให้ตรงกันด้วย
+    const mainSelect = document.getElementById('categoryFilter');
+    if(mainSelect) mainSelect.value = categoryName;
+}
+</script>
+
+</body>
+<html>

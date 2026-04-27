@@ -1,0 +1,1510 @@
+[
+  {
+    "name": "304 Manifold Accessory",
+    "sku": "304",
+    "page": "measurement",
+    "category": "measurement,pressure,instrument",
+    "categoryTag": ["measurement","pressure","instrument"],
+    "img": "imgpro/304_Manifold_Accessory.jpg",
+    "desc": "<p>รายละเอียดของรุ่น 304...</p>"
+  },
+  {
+    "name": "306 Manifold Accessory",
+    "sku": "306",
+    "page": "measurement",
+    "category": "",
+    "categoryTag": "pressure",
+    "img": "imgpro/306_Manifold_Accessory.jpg",
+    "desc": "<p>รายละเอียดของรุ่น 306...</p>"
+  },
+  {
+    "name": "2051C Series",
+    "sku": "2051C",
+    "page": "measurement",
+    "category": "Pressure and Level",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051C_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051T Series",
+    "sku": "2051T",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051T_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051L Series",
+    "sku": "2051L",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051L_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+
+    "name": "2088 Series",
+    "sku": "2088",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2088_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2090 Series",
+    "sku": "2090",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2090_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2140 Vibrating Fork",
+    "sku": "2140",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2140_Vibrating_Fork.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051C Series",
+    "sku": "3051C",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051C_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051S Series",
+    "sku": "3051S",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051S_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051S Series ver2",
+    "sku": "3051S",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051S_Series_ver2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051T Series",
+    "sku": "3051T",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051T_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "R305 Manifold Accessory",
+    "sku": "R305",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/R305_Manifold_Accessory.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-3408 Level Transmitter-Non-Contacting Radar",
+    "sku": "3408",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/Rosemount-3408_Level_Transmitter-Non-Contacting_Radar.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-5408 Non Contacting Radar Transmitter",
+    "sku": "5408",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/Rosemount-5408_Non_Contacting_Radar_Transmitter.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "114C Thermowell Series",
+    "sku": "114C",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/114C_Thermowell_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "214C RTD Sensor",
+    "sku": "214C",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/214C_RTD_Sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "214C Thermocouple Series",
+    "sku": "214C",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/214C_Thermocouple_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "248 Head Mount Series",
+    "sku": "248",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/248_Head_Mount_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "248 Rail Mount Series",
+    "sku": "248",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/248_Rail_Mount_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "644 Series",
+    "sku": "644",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/644_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-3144P Temperature Transmitter",
+    "sku": "3144P",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/Rosemount-3144P_Temperature_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-P-X-well Technology",
+    "sku": "P-X-well",
+    "page": "measurement",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/Rosemount-P-X-well_Technology.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "405 Compact Orifice Plate",
+    "sku": "405",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/405_Compact_Orifice_Plate.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "585 Annubar Primary Element",
+    "sku": "585",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/585_Annubar_Primary_Element.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051CFA Annubar",
+    "sku": "2051CFA",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/2051CFA_Annubar.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051CFC Compact Annubar Series",
+    "sku": "2051CFC",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/2051CFC_Compact_Annubar_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051SFA Annubar Series",
+    "sku": "3051SFA",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/3051SFA_Annubar_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8600 Vortex Series",
+    "sku": "8600",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8600_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8705 Flange Series",
+    "sku": "8705",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8705_Flange_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8711 Wafer Series",
+    "sku": "8711",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8711_Wafer_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8712E Transmitter",
+    "sku": "8712E",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8712E_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8721 Hygienic Series",
+    "sku": "8721",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8721_Hygienic_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8732EM Transmitter",
+    "sku": "8732EM",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8732EM_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8800 Dual Vortex Series",
+    "sku": "8800",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8800_Dual_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8800 Vortex Series",
+    "sku": "8800",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8800_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "prod-flexim-transmitters",
+    "sku": "prod-flexim-transmitters",
+    "page": "measurement",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/prod-flexim-transmitters.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "1700 2700 Transmitter",
+    "sku": "1700-2700",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/1700_2700_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3500 3700 Transmitter ver1",
+    "sku": "3500-3700",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/3500_3700_Transmitter_ver1.gif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3500 3700 Transmitter ver2",
+    "sku": "3500-3700",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/3500_3700_Transmitter_ver2.gif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "4200 Transmitter",
+    "sku": "4200",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/4200_Transmitter.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "ELITE Coriolis Flow and Density",
+    "sku": "ELITE_Coriolis",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/ELITE_Coriolis_Flow_and_Density.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "F Series",
+    "sku": "F Series",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/F_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "H Series",
+    "sku": "H Series",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/H_Series.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "T Series",
+    "sku": "T Series",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/T_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Fork Density",
+    "sku": "Fork Density",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/Fork_Density.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Fork Viscosity",
+    "sku": "Fork Viscosity",
+    "page": "measurement",
+    "category": "Density and Viscosity",
+    "categoryTag": "density",
+    "img": "imgpro/Fork_Viscosity.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX V604 Programmable Multifunction Transmitter",
+    "sku": "SINEAX V604",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/1_SINEAX_V604_Programmable_Multifunction_Transmitter.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX V624 Programmable Temp Transmitter",
+    "sku": "SINEAX V624",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/2_SINEAX_V624_Programmable_Temp_Transmitter.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX 2I1",
+    "sku": "SINEAX 2I1",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/3_SINEAX_2I1.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX I542",
+    "sku": "SINEAX I542",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/4_SINEAX_I542.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX TV819",
+    "sku": "SINEAX TV819",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/5_SINEAX_TV819.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX U554",
+    "sku": "SINEAX U554",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/6_SINEAX_U554.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX AM1000",
+    "sku": "SINEAX AM1000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/8_SINEAX_AM1000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "APLUS",
+    "sku": "APLUS",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/APLUS.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "CENTRAX SM-CU3000",
+    "sku": "CENTRAX SM-CU3000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/CENTRAX_SM-CU3000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "KINAX 3W2 ver1",
+    "sku": "KINAX 3W2 ver1",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/KINAX_3W2_ver1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "KINAX N702",
+    "sku": "KINAX N702",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/KINAX_N702.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "KINAX WT707",
+    "sku": "KINAX WT707",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/KINAX_WT707.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "KINAX WT720",
+    "sku": "KINAX WT720",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/KINAX_WT720.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "LINAX DR3000",
+    "sku": "LINAX DR3000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/LINAX_DR3000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "LINAX PQ3000",
+    "sku": "LINAX PQ3000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/LINAX_PQ3000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "MAVOSYS10",
+    "sku": "MAVOSYS10",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/MAVOSYS10.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX CAM",
+    "sku": "SINEAX CAM",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/SINEAX_CAM.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SINEAX DM5000",
+    "sku": "SINEAX DM5000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/SINEAX_DM5000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SIRAX BM1000",
+    "sku": "SIRAX BM1000",
+    "page": "measurement",
+    "category": "Transducers, Converters, Angular Position",
+    "categoryTag": "transducer",
+    "img": "imgpro/SIRAX_BM1000.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "400 Conductivity Sensor",
+    "sku": "400 Conductivity Sensor",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/400_Conductivity_Sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "402 and 402vp sensor",
+    "sku": "402 and 402vp sensor",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/402_and_402vp_sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "CX1100 Oxygen",
+    "sku": "CX1100 Oxygen",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/CX1100_Oxygen.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "OCX 8800 Oxygen",
+    "sku": "OCX 8800 Oxygen",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/OCX_8800_Oxygen.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "rosemount-490a-dissoled-oxygen-sensor",
+    "sku": "rosemount-490a-dissoled-oxygen-sensor",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/rosemount-490a-dissoled-oxygen-sensor.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-499ADO Dissolved Oxygen Sensor",
+    "sku": "Rosemount-499ADO Dissolved Oxygen Sensor",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/Rosemount-499ADO_Dissolved_Oxygen_Sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-1056 Four-Wire Analyzer",
+    "sku": "Rosemount-1056 Four-Wire Analyzer",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/Rosemount-1056_Four-Wire_Analyzer.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-1058 Dual Channel Transmitter",
+    "sku": "Rosemount-1058 Dual Channel Transmitter",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/Rosemount-1058_Dual_Channel_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-1066 Single Channel Transmitter",
+    "sku": "Rosemount-1066 Single Channel Transmitter",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/Rosemount-1066_Single_Channel_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-CX2100 In Situ Oxygen Analyzer",
+    "sku": "Rosemount-CX2100 In Situ Oxygen Analyzer",
+    "page": "measurement",
+    "category": "Analyzer,Conductivity,Oxygen",
+    "categoryTag": "analyzer",
+    "img": "imgpro/Rosemount-CX2100_In_Situ_Oxygen_Analyzer.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Liebherr Ref1",
+    "sku": "Liebherr Ref1",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","moisture"],
+    "img": "imgpro/Liebherr_Ref1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Liebherr Ref2",
+    "sku": "Liebherr Ref2",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","moisture"],
+    "img": "imgpro/Liebherr_Ref2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Liebherr Ref3",
+    "sku": "Liebherr Ref3",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","moisture"],
+    "img": "imgpro/Liebherr_Ref3.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Liebherr Ref4",
+    "sku": "Liebherr Ref4",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","moisture"],
+    "img": "imgpro/Liebherr_Ref4.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Litronic FMS II",
+    "sku": "Litronic FMS II",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","moisture"],
+    "img": "imgpro/Litronic_FMS_II.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3300HT and 3300HTVP Sensors",
+    "sku": "3300HT and 3300HTVP Sensors",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","ph-orp"],
+    "img": "imgpro/3300HT_and_3300HTVP_Sensors.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3900 and 3900vp Sensor",
+    "sku": "3900 and 3900vp Sensor",
+    "page": "measurement",
+    "category": "Analyzer,Moisture",
+    "categoryTag": ["analyzer","ph-orp"],
+    "img": "imgpro/3900_and_3900vp_Sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-1600 Compact Flow Transmitter",
+    "sku": "Motion-1600",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-1600_Compact_Flow_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-1700",
+    "sku": "Motion-1700",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-1700.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-2700",
+    "sku": "Motion-2700",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-2700.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-4200",
+    "sku": "Motion-4200",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-4200.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-4700 Flow Transmitter",
+    "sku": "Motion-4700",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-4700_Flow_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-5700",
+    "sku": "Motion-5700",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-5700.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-ELITE-Coriolis",
+    "sku": "Motion-ELITE-Coriolis",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-ELITE-Coriolis.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-F-Coriolis",
+    "sku": "Motion-F-Coriolis",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-F-Coriolis.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Micro Motion-G-Series",
+    "sku": "Motion-G-Series",
+    "page": "measurement",
+    "category": "Measurement and Instrumentation, Mass flow",
+    "categoryTag": "mass-flow",
+    "img": "imgpro/Micro_Motion-G-Series.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis M2CP Quarter-turn Multi-turn Electric Valve Actuator",
+    "sku": "Bettis-M2CP",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"], 
+    "img": "imgpro2/Bettis_M2CP_Quarter-turn_Multi-turn_Electric_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis RTS CL Compact Linear Electric Valve Actuator",
+    "sku": "Bettis-RTS-CL",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_RTS_CL_Compact_Linear_Electric_Valve_Actuator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis RTS CM Compact Multi-turn Electric Valve Actuator",
+    "sku": "Bettis-RTS-CM",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_RTS_CM_Compact_Multi-turn_Electric_Valve_Actuator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis RTS FL Fail-Safe Linear Electric Valve Actuator",
+    "sku": "Bettis-RTS-FL",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_RTS_FL_Fail-Safe_Linear_Electric_Valve_Actuator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis RTS FQ Fail-Safe Quarter-turn Electric Valve Actuator",
+    "sku": "Bettis-RTS-FQ",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_RTS_FQ_Fail-Safe_Quarter-turn_Electric_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis TEC2 Electric Valve Actuator",
+    "sku": "Bettis-TEC2",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_TEC2_Electric_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis XTE3000 Electric Actuator",
+    "sku": "Bettis-XTE3000",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/Bettis_XTE3000_Electric_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "DCMlink Software for Electric Valve Actuators-1",
+    "sku": "DCMlink-Software",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/DCMlink_Software_for_Electric_Valve_Actuators-1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "DCMlink Software for Electric Valve Actuators",
+    "sku": "DCMlink-Software",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","electric"],
+    "img": "imgpro2/DCMlink_Software_for_Electric_Valve_Actuators.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis EHO Electro-Hydraulic Operator",
+    "sku": "Bettis-EHO",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","hydraulic"],
+    "img": "imgpro2/Bettis_EHO_Electro-Hydraulic_Operator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis Gas-Hydraulic Valve Actuator",
+    "sku": "Bettis-Gas",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","hydraulic"],
+    "img": "imgpro2/Bettis_Gas-Hydraulic_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Shafer L-Series Gas Over Oil Valve Actuator",
+    "sku": "Shafer-LSeries",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","hydraulic"],
+    "img": "imgpro2/Shafer_L-Series_Gas_Over_Oil_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Shafer RV-Series Rotary Vane Hydraulic Valve Actuator",
+    "sku": "Shafer-RVSeries",
+    "page": "valves",
+    "category": "Valves and Accessories, Actuator",
+    "categoryTag": ["valve-and-accessories","actuator","hydraulic"],
+    "img": "imgpro2/Shafer_RV-Series_Rotary_Vane_Hydraulic_Valve_Actuator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3D Drawing",
+    "sku": "3D-Drawing",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/3D_Drawing.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3D Drawing_2",
+    "sku": "3D-Drawing-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/3D_Drawing_2.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3D Drawing_3",
+    "sku": "3D-Drawing-3",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/3D_Drawing_3.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3D Drawing_4",
+    "sku": "3D-Drawing-4",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/3D_Drawing_4.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3D Mounting",
+    "sku": "3D-Mounting",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/3D_Mounting.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bracket Limit Switch",
+    "sku": "Bracket-Limit-Switch",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Bracket_Limit_Switch.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bracket Stress Analysis",
+    "sku": "Bracket-Stress-Analysis",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Bracket_Stress_Analysis.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bracket Valve",
+    "sku": "Bracket-Valve",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Bracket_Valve.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bushing Stress Analysis",
+    "sku": "Bushing-Stress-Analysis",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Bushing_Stress_Analysis.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bushing Valve",
+    "sku": "Bushing-Valve",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Bushing_Valve.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "GA Drawing",
+    "sku": "GA-Drawing",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/GA_Drawing.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "GA Drawing_2",
+    "sku": "GA-Drawing-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/GA_Drawing_2.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Spool Type Bracket",
+    "sku": "Spool-Type-Bracket",
+    "page": "valves",
+    "category": "Valves and Accessories, Engineering and Design",
+    "categoryTag": ["valve-and-accessories","engineering-and-design","mounting"],
+    "img": "imgpro2/Spool_Type_Bracket.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Damper Control",
+    "sku": "Damper-Control",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve",
+    "categoryTag": ["valve-and-accessories","valve"],
+    "img": "imgpro2/Damper_control.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Damper Control-1",
+    "sku": "Damper-Control-1",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve",
+    "categoryTag": ["valve-and-accessories","valve"],
+    "img": "imgpro2/Damper_Control-1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "On-Off Ball Valve",
+    "sku": "On-Off-Ball-Valve",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve",
+    "categoryTag": ["valve-and-accessories","valve"],
+    "img": "imgpro2/On-Off_Ball_Valve.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "On-Off Ball Valve-1",
+    "sku": "On-Off-Ball-Valve-1",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve",
+    "categoryTag": ["valve-and-accessories","valve"],
+    "img": "imgpro2/On-Off_Ball_Valve-1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoFlex",
+    "sku": "BilcoFlex",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoFlex.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoFlex-1",
+    "sku": "BilcoFlex-1",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoFlex-1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoFlex-2",
+    "sku": "BilcoFlex-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoFlex-2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoFlex-3",
+    "sku": "BilcoFlex-3",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoFlex-3.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoShield",
+    "sku": "BilcoShield",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoShield.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoShield-1",
+    "sku": "BilcoShield-1",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoShield-1.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoShield-2",
+    "sku": "BilcoShield-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoShield-2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoTherm",
+    "sku": "BilcoTherm",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoTherm.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoTherm-1",
+    "sku": "BilcoTherm-1",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoTherm-1.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BilcoTherm-2",
+    "sku": "BilcoTherm-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Fireproof Jacket",
+    "categoryTag": ["valve-and-accessories","valve-accessories","fireproof-jacket"],
+    "img": "imgpro2/BilcoTherm-2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis AMO-Series Quarter-Turn Manual Override",
+    "sku": "Bettis-AMO",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_AMO-Series_Quarter-Turn_Manual_Override.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis ATB-Series Multi-Turn Bevel Gear Operator",
+    "sku": "Bettis-ATB",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_ATB-Series_Multi-Turn_Bevel_Gear_Operator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis AT-IS-Series Quarter-Turn Worm Gear Operator",
+    "sku": "Bettis-AT-IS",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_AT-IS-Series_Quarter-Turn_Worm_Gear_Operator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis AT-Series Quarter-Turn Worm Gear Operator",
+    "sku": "Bettis-AT-IS",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_AT-Series_Quarter-Turn_Worm_Gear_Operator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis CW series Quarter-turn Worm Gear Operator",
+    "sku": "Bettis-CW",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_CW_series_Quarter-turn_Worm_Gear_Operator.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Bettis IS-EA series Quarter-turn Worm Gear Operator",
+    "sku": "Bettis-IS-EA",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/Bettis_IS-EA_series_Quarter-turn_Worm_Gear_Operator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "EL-O-Matic MO Manual Override Gear Box",
+    "sku": "EL-O-Matic-MO",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Gear Manual Override",
+    "categoryTag": ["valve-and-accessories","valve-accessories","gear-manual-override"],
+    "img": "imgpro2/EL-O-Matic_MO_Manual_Override_Gear_Box.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "360",
+    "sku": "360",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/360.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "1145",
+    "sku": "1145",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/1145.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2200",
+    "sku": "2200",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/2200.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2200 Stainless",
+    "sku": "2200-Stainless",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/2200_Stainless.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2600",
+    "sku": "2600",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/2600.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2600 Stainless",
+    "sku": "2600-Stainless",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/2600_Stainless.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3000",
+    "sku": "3000",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/3000.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3200",
+    "sku": "3200",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/3200.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3300",
+    "sku": "3300",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/3300.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3400",
+    "sku": "3400",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/3400.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8300",
+    "sku": "8300",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/8300.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8400",
+    "sku": "8400",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/8400.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8500",
+    "sku": "8500",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/8500.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Beacon Visual Position Indicator",
+    "sku": "Beacon Visual",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/Beacon_Visual_Position_Indicator.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "BY-90",
+    "sku": "BY-90",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/BY-90.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "DPDT switch",
+    "sku": "DPDT-switch",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/DPDT_switch.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Magnum",
+    "sku": "Magnum",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/Magnum.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Magpac switch",
+    "sku": "Magpac-switch",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/Magpac_switch.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "MOD3",
+    "sku": "MOD3",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/MOD3.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "P+F Switch",
+    "sku": "P+F-Switch",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/P+F_Switch.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Silver Bullet",
+    "sku": "Silver Bullet",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/Silver_Bullet.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "SPDT switch",
+    "sku": "SPDT-switch",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/SPDT_switch.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Westlock 2007",
+    "sku": "Westlock-2007",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Limit Switch",
+    "categoryTag": ["valve-and-accessories","valve-accessories","limit-switch"],
+    "img": "imgpro2/Westlock_2007.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Digital D200 Position Transmitter",
+    "sku": "Digital-D200",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
+    "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
+    "img": "imgpro2/Digital_D200_Position_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Digital EPIC-2 Position Transmitter",
+    "sku": "Digital-EPIC-2",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
+    "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
+    "img": "imgpro2/Digital_EPIC-2_Position_Transmitter.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Westlock ICoT 5000-Series",
+    "sku": "Westlock-ICot-5000-Series",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
+    "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
+    "img": "imgpro2/Westlock_ICoT_5000-Series.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Westlock ICoT 6000-Series",
+    "sku": "Westlock-ICot-6000-Series",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
+    "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
+    "img": "imgpro2/Westlock_ICot_6000-Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Westlock K20 Electro-pneumatic Positioner",
+    "sku": "Westlock-K20",
+    "page": "valves",
+    "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
+    "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
+    "img": "imgpro2/Westlock_K20_Electro-pneumatic_Positioner.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  }
+  
+
+
+
+]

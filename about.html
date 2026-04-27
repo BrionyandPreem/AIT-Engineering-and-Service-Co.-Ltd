@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AIT Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Sarabun:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body { 
+            font-family: 'Inter', 'Sarabun', sans-serif; 
+            -webkit-font-smoothing: antialiased;
+            color: #4a4a4a;
+        }
+        .text-navy { color: #003366; }
+        .text-orange { color: #FF6600; }
+        .bg-navy { background-color: #003366; }
+        .bg-orange { background-color: #FF6600; }
+        p { line-height: 1.8; letter-spacing: 0.01em; }
+
+        .hero-bg {
+            /* ปรับแต่ง Gradient และรูปภาพให้ดู Modern ขึ้น */
+            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)), 
+                              url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* เพิ่มลูกเล่นเวลา Scroll */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <div class="flex items-center space-x-3">
+                <img src="AITlogo.jpg" 
+                     alt="AIT Engineering & Service Logo" 
+                     class="h-10 w-auto object-contain">
+            </div>
+
+        <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
+                <a href="about.html" class="hover:text-orange-500">About Us </a>
+            
+            <li class="relative group h-full flex items-center">
+                <a href="products.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                PRODUCTS & SERVICES
+                <i class="fa-solid fa-caret-down text-[10px]"></i>
+                </a>
+
+            <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+               transition-all duration-300 z-50">
+            <li><a href="1measurement.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Measurement and Instrumentation</a></li>
+            <li><a href="2valves.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+            <li><a href="3machines.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a></li>
+            <li><a href="4system.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+            <li><a href="5innovation.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+            <li><a href="6service.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+            <li><a href="7camille.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+            </ul>
+            </li>
+
+                <a href="videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+
+            <li class="relative group h-full flex items-center">
+                <a href="contact.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                CONTACT
+                <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                </a>
+
+            <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+               transition-all duration-300 z-50">
+        
+            <li><a href="contact.html?branch=bangkok" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a>
+            </li>
+            <li><a href="contact.html?branch=ratchaburi" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
+                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a>
+            </li>
+            <li><a href="contact.html?branch=rayong" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
+                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a>
+            </li>
+            <li><a href="contact.html?branch=khonkaen" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
+                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a>
+            </li>
+            </ul>
+            </li>
+        </nav>
+
+            <div class="bg-gray-100 p-2 rounded">
+                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-16 items-start">
+            <div class="md:col-span-4">
+                <div class="aspect-[4/5] bg-gray-100 overflow-hidden shadow-sm p-2 rounded">
+                <img src="Boss-2.png" alt="Management" class="w-full h-full object-contain">
+            </div>
+
+            <div class="mt-6 border-l-2 border-orange pl-4">
+                <h4 class="text-lg font-semibold text-navy uppercase">Management Message</h4>
+                <p class="text-gray-500 text-sm italic mt-2">"We believe in values of people. We make customer trust us on quality work. We believe in integrity."</p>
+            </div>
+            </div>
+
+            <div class="md:col-span-8 space-y-8">
+                <div>
+                    <h2 class="text-2xl font-semibold text-navy mb-4 uppercase">Who We Are</h2>
+                    <p class="text-gray-600 font-light">
+                        AIT Engineering and Service Co., Ltd. aims to be Thailand's leading instrument and service provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies in various industries. We offer the best solution to our customers with our well trained staffs and successfully proven products.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-8 pt-8">
+                    <div class="p-6 bg-gray-50 border-t-2 border-navy">
+                        <h3 class="text-navy font-semibold mb-3 uppercase text-sm tracking-wider">Vision</h3>
+                        <p class="text-gray-600 font-light italic">"Creative Innovations for Sustainable Industry"</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t-2 border-orange">
+                        <h3 class="text-navy font-semibold mb-3 uppercase text-sm tracking-wider">Our Value</h3>
+                        <ul class="text-sm text-gray-600 space-y-2 font-light">
+                            <li>• Family culture</li>
+                            <li>• Honesty, Integrity, and fairness</li>
+                            <li>• Continuous development & excellence</li>
+                            <li>• High standard & safety</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-center text-navy font-semibold text-3xl mb-16 uppercase tracking-wider">History & Milestones</h2>
+            
+            <div class="space-y-0 border-l border-gray-200 ml-4 md:ml-0">
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2002</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full">
+                        <span class="md:hidden font-bold text-orange">2002</span>
+                        <h4 class="font-semibold text-gray-800 uppercase text-sm mb-2">Foundation</h4>
+                        <p class="text-gray-600 font-light">AIT Engineering and Services was established in September. Aims to be Thailand's leading instrument and service provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies.</p>
+                    </div>
+                </div>
+
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2005</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
+                        <span class="md:hidden font-bold text-orange">2005</span>
+                        <p class="text-gray-600 font-light">Added office in Banpong Area near SCG Packaging to expand service coverage.</p>
+                    </div>
+                </div>
+
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2006</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
+                        <span class="md:hidden font-bold text-orange">2006</span>
+                        <p class="text-gray-600 font-light">Appointed by Emerson Process Management as the local business partner for the Pulp and paper industry.</p>
+                    </div>
+                </div>
+
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2010</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
+                        <span class="md:hidden font-bold text-orange">2010</span>
+                        <p class="text-gray-600 font-light">Added another office in Khon Kaen to serve customers in North East Thailand.</p>
+                    </div>
+                </div>
+
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2012</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
+                        <span class="md:hidden font-bold text-orange">2012</span>
+                        <p class="text-gray-600 font-light">Rented an office in Rayong and started selling valves and actuators in the Eastern Seaboard area.</p>
+                    </div>
+                </div>
+
+                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl italic text-sm">2013-15</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
+                        <span class="md:hidden font-bold text-orange">2013-2015</span>
+                        <h4 class="font-semibold text-gray-800 uppercase text-xs mb-2">Quality & Certification</h4>
+                        <ul class="text-gray-600 font-light space-y-2">
+                            <li>• 2013: Started to use ISO Standards for the whole company operations.</li>
+                            <li>• 2014: Applied for the Bureau Veritas Seal for management system standards.</li>
+                            <li>• 2015: Passed the Bureau Veritas Certification for Sales, installation and after sales.</li>
+                            <li>• 2015: Relocated the Rayong office to its current place with the new 500 sq.m workshop.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative md:grid md:grid-cols-6 items-baseline group">
+                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl italic text-sm">2018-20</div>
+                    <div class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-navy before:rounded-full">
+                        <span class="md:hidden font-bold text-orange">2018-2020</span>
+                        <h4 class="font-semibold text-gray-800 uppercase text-xs mb-2">Global Partnership</h4>
+                        <p class="text-gray-600 font-light">Signed official contracts with PMT S.r.l (2018) and Airaghi S.r.l. (2020) to expand high-end industrial solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-center text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10">Our Strategic Brands</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 text-center items-center opacity-60">
+                <span class="font-bold text-navy text-xs">BETTIS</span>
+                <span class="font-bold text-navy text-xs">ROSEMOUNT</span>
+                <span class="font-bold text-navy text-xs">MICROMOTION</span>
+                <span class="font-bold text-navy text-xs">SHAFER</span>
+                <span class="font-bold text-navy text-xs">EL-O-MATIC</span>
+                <span class="font-bold text-navy text-xs">HYTORK</span>
+                <span class="font-bold text-navy text-xs">CAMILLE BAUER</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center bg-white border-t border-gray-50">
+        <p class="text-gray-400 text-sm mb-8 font-light">Providing engineering and services to meet growing customer demands.</p>
+        <a href="contact.html" class="inline-block border border-navy text-navy px-12 py-3 text-xs font-bold tracking-widest hover:bg-navy hover:text-white transition-all duration-300">
+            CONTACT US
+        </a>
+    </footer>
+
+</body>
+</html>
