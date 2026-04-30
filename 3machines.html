@@ -179,35 +179,10 @@
         </div>
     </header>
 
-    <div id="cart-drawer"
-        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-[100] flex flex-col">
-        <div class="p-4 bg-[#1a4066] text-white flex justify-between items-center">
-            <h2 class="font-bold">Your shopping cart</h2>
-            <button onclick="toggleCart()" class="text-2xl hover:text-orange-400">&times;</button>
-        </div>
-
-        <div id="cart-items" class="flex-1 overflow-y-auto p-4 space-y-4 text-sm text-gray-600">
-            <p class="text-center text-gray-400 mt-10">Your shopping cart is empty...</p>
-        </div>
-
-        <div class="p-4 border-t border-gray-200 bg-gray-50">
-            <div class="flex justify-between font-bold text-gray-800 mb-4">
-                <span>Total:</span>
-                <span id="cart-total">0 items</span>
-            </div>
-            <button
-                class="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition shadow-lg">
-                Request a product quotation
-            </button>
-        </div>
-    </div>
-
-    <div id="cart-overlay" onclick="toggleCart()" class="fixed inset-0 bg-black/50 hidden z-[90]"></div>
-
     <div class="bg-gray-50 flex-grow pb-12">
 
         <div class="container mx-auto px-4 py-4 text-xs text-gray-500">
-            <a href="index.html" class="text-blue-500 hover:underline">Home</a> / Products
+            <a href="index.html" class="text-blue-500 hover:underline">Home</a> / Machines and Process Systems
         </div>
 
         <div class="container mx-auto px-4">
@@ -235,6 +210,7 @@
                                 <option value="limit-switch">Limit Switch</option>
                                 <option value="measurement-and-instrumentation">Measurement and Instrumentation</option>
                                 <option value="moisture">Moisture</option>
+                                <option value="mounting">Mounting Design</option>
                                 <option value="ph-orp">PH,ORP</option>
                                 <option value="pneumatic">Pneumatic</option>
                                 <option value="positioner-and-position-transmitter">Positioner and Position Transmitter
@@ -244,7 +220,7 @@
                                 <option value="temperature">Temperature</option>
                                 <option value="transducers-converters-angular-position">Transducers, Converters, Angular
                                     Position</option>
-                                <option value="Valve">Valve</option>
+                                <option value="valve">Valve</option>
                                 <option value="valve-accessories">Valve Accessories</option>
                                 <option value="valves-and-accessories">Valves and Accessories</option>
                             </select>
@@ -259,114 +235,29 @@
                     </div>
 
                     <div class="bg-white shadow-sm border border-gray-100">
-                        <div class="bg-gray-50 py-3 px-4 border-b">
-                            <h3 class="text-center font-bold text-gray-700 text-sm">Product Categories</h3>
+                        <div class="bg-gray-50 py-3 px-4 border-b flex justify-between items-center">
+                            <h3 id="sidebarTitle" class="font-bold text-gray-700 text-sm">Product Categories</h3>
+                            <button id="backBtn" onclick="renderMainSidebar()"
+                                class="hidden text-[10px] text-blue-600 hover:underline">
+                                <i class="fa-solid fa-chevron-left"></i> Back
+                            </button>
                         </div>
-                        <ul class="text-xs text-gray-600">
+                        <ul id="sidebarMenu" class="text-xs text-gray-600">
                             <li onclick="filterByCategory('all')"
                                 class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                All Categories <span>(92)</span>
+                                All Categories <span>(2)</span>
                             </li>
-                            <li onclick="filterByCategory('measurement-and-instrumentation')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Measurement and Instrumentation <span>(92)</span>
-                            </li>
-                            <li onclick="filterByCategory('valves-and-accessories')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Valves and Accessories <span>(75)</span>
-                            </li>
-                            <li onclick="filterByCategory('machines-and-process-systems')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Machines and Process Systems <span>(2)</span>
-                            </li>
-                            <li onclick="filterByCategory('system-and-equipment')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                System and Equipment <span>(10)</span>
-                            </li>
-                            <li onclick="filterByCategory('innovation')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Innovation <span>(5)</span>
-                            </li>
-                            <li onclick="filterByCategory('service')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Service <span>(12)</span>
-                            </li>
-                            <li onclick="filterByCategory('camille-bauer')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Camille Bauer <span>(29)</span>
-                            </li>
-
-                            <li onclick="filterByCategory('pressure')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Pressure and Level <span>(15)</span>
-                            </li>
-                            <li onclick="filterByCategory('temperature')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Temperature <span>(8)</span>
-                            </li>
-                            <li onclick="filterByCategory('flow')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Flow <span>(14)</span>
-                            </li>
-                            <li onclick="filterByCategory('density')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Density and Viscosity <span>(10)</span>
-                            </li>
-                            <li onclick="filterByCategory('transducer')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Transducers, Converters, Angular Position <span>(19)</span>
-                            </li>
-                            <li onclick="filterByCategory('analyzer')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Analyzer <span>(17)</span>
-                            </li>
-                            <li onclick="filterByCategory('mass-flow')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Mass flow <span>(9)</span>
-                            </li>
-
-                            <li onclick="filterByCategory('actuator')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Actuator <span>(13)</span>
-                            </li>
-                            <li onclick="filterByCategory('engineering-and-design')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Engineering and Design <span>(13)</span>
-                            </li>
-                            <li onclick="filterByCategory('valve')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Valve <span>(4)</span>
-                            </li>
-                            <li onclick="filterByCategory('valve-accessories')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Valve Accessories <span>(45)</span>
-                            </li>
-
                             <li onclick="filterByCategory('chaina-zhenxin-turbo-machine')"
                                 class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
                                 Chaina Zhenxin Turbo Machine <span>(2)</span>
                             </li>
-
-                            <li onclick="filterByCategory('deflaker')"
+                            <li onclick="filterByCategory('pmt')"
                                 class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Deflaker - Airaghi SRL <span>(1)</span>
+                                PMT <span>(0)</span>
                             </li>
-
-                            <li onclick="filterByCategory('angle-transmitter')"
+                            <li onclick="filterByCategory('umv')"
                                 class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Angle transmitter <span>(5)</span>
-                            </li>
-                            <li onclick="filterByCategory('inclination-transmitter')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Inclination transmitter <span>(2)</span>
-                            </li>
-                            <li onclick="filterByCategory('power-monitoring')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Power monitoring <span>(15)</span>
-                            </li>
-                            <li onclick="filterByCategory('power-quality')"
-                                class="px-4 py-3 border-b hover:bg-blue-50 cursor-pointer flex justify-between">
-                                Power quality <span>(7)</span>
+                                UMV <span>(0)</span>
                             </li>
                         </ul>
                     </div>
@@ -374,7 +265,8 @@
 
                 <main class="w-full lg:w-3/4">
                     <div class="text-center mb-10">
-                        <h1 class="text-3xl font-medium text-gray-800 mb-2">Products</h1>
+                        <h1 id="categoryTitle" class="text-3xl font-medium text-gray-800 mb-2">Machines and Process Systems
+                        </h1>
                         <div class="w-16 h-[2px] bg-blue-500 mx-auto"></div>
                     </div>
 
@@ -384,11 +276,12 @@
                         </p>
                     </div>
 
-                    <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-4">
-                    </div>
-                    <div id="pagination-controls" class="flex justify-center mt-12 mb-8">
+                    <div id="productGrid"
+                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-12 gap-x-4">
                     </div>
 
+                    <div id="pagination-controls" class="flex justify-center mt-12 mb-8 gap-2">
+                    </div>
                 </main>
             </div>
         </div>
@@ -477,7 +370,40 @@
         </div>
     </div>
 
+    <div id="cart-drawer"
+        class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-[100] flex flex-col">
+        <div class="p-4 bg-[#1a4066] text-white flex justify-between items-center">
+            <h2 class="font-bold">Your shopping cart</h2>
+            <button onclick="toggleCart()" class="text-2xl hover:text-orange-400">&times;</button>
+        </div>
+
+        <div id="cart-items" class="flex-1 overflow-y-auto p-4 space-y-4 text-sm text-gray-600">
+            <p class="text-center text-gray-400 mt-10">Your shopping cart is empty...</p>
+        </div>
+
+        <div class="p-4 border-t border-gray-200 bg-gray-50">
+            <div class="flex justify-between font-bold text-gray-800 mb-4">
+                <span>Total:</span>
+                <span id="cart-total">0 items</span>
+            </div>
+            <button
+                class="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-orange-600 transition shadow-lg">
+                Request a product quotation
+            </button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-[90] hidden" onclick="toggleCart()"></div>
+
     <script src="script.js"></script>
+
+    <script>
+        window.onload = function () {
+            if (typeof renderMainSidebar === "function") renderMainSidebar();
+            if (typeof loadProducts === "function") loadProducts();
+            if (typeof updateCartUI === "function") updateCartUI();
+        };
+    </script>
 
 </body>
 

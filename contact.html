@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,379 +13,487 @@
             background-size: cover;
             background-position: center;
         }
+
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body class="font-sans">
 
-    <header class="bg-white shadow-sm">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 
             <div class="flex items-center space-x-3">
-                <img src="AITlogo.jpg" 
-                     alt="AIT Engineering & Service Logo" 
-                     class="h-10 w-auto object-contain">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
             </div>
 
-        <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
-                <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="hover:text-orange-500">Home</a>
                 <a href="about.html" class="hover:text-orange-500">About Us </a>
-            
-            <li class="relative group h-full flex items-center">
-                <a href="products.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
-                PRODUCTS & SERVICES
-                <i class="fa-solid fa-caret-down text-[10px]"></i>
-                </a>
 
-            <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
-               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
-               transition-all duration-300 z-50">
-            <li><a href="1measurement.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Measurement and Instrumentation</a></li>
-            <li><a href="2valves.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
-            <li><a href="3machines.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a></li>
-            <li><a href="4system.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
-            <li><a href="5innovation.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
-            <li><a href="6service.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
-            <li><a href="7camille.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
-            </ul>
-            </li>
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
 
                 <a href="videos.html" class="hover:text-orange-500">Videos</a>
-                <a href="activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="activities.html" class="hover:text-orange-500">Activities <i
+                        class="fa-solid fa-caret-down text-[10px]"></i></a>
 
-            <li class="relative group h-full flex items-center">
-                <a href="contact.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
-                CONTACT
-                <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
-                </a>
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="border-b-4 border-green-500 pb-1 text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
 
-            <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
-               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
-               transition-all duration-300 z-50">
-        
-            <li><a href="contact.html?branch=bangkok" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
-                <i class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a>
-            </li>
-            <li><a href="contact.html?branch=ratchaburi" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a>
-            </li>
-            <li><a href="contact.html?branch=rayong" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a>
-            </li>
-            <li><a href="contact.html?branch=khonkaen" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a>
-            </li>
-            </ul>
-            </li>
-        </nav>
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
+            </nav>
 
-            <div class="bg-gray-100 p-2 rounded">
-                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
             </div>
         </div>
     </header>
-    
-<div class="bg-white font-sans text-gray-700">
-    
-    <section class="bg-[#5a9ad4] py-8 text-center">
-        <h1 class="text-white text-4xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
-        
-        <div class="container mx-auto mt-6 flex flex-wrap justify-center gap-2 px-4">
-            <a href="index.html"><button class="bg-[#ff6600] text-white px-6 py-2 text-xs font-bold uppercase rounded shadow-sm">Home</button></a>
-    
-            <button onclick="showBranch('khonkaen', this)" class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Khonkaen Branch</button>
-            <button onclick="showBranch('ratchaburi', this)" class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Ratchaburi Branch</button>
-            <button onclick="showBranch('rayong', this)" class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Rayong Branch</button>
-            
-            <button id="default-btn" onclick="showBranch('bangkok', this)" class="branch-btn bg-[#ff6600] text-white px-4 py-2 text-xs font-bold uppercase transition shadow-sm">Bangkok</button>
-        </div>
-    </section>
 
-    <section class="bg-[#345e82] py-16 text-white min-h-[500px]">
-        <div class="container mx-auto px-4">
+    <div class="bg-white font-sans text-gray-700">
 
-            <div id="bangkok" class="branch-section">
-                <div class="flex flex-col lg:flex-row gap-16">
-                    <div class="lg:w-1/2">
-                    <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Bangkok Head office Address</h2>
-                    
-                    <div class="mt-8 space-y-8 text-sm leading-relaxed">
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
-                            <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
-                        </div>
+        <section class="bg-[#5a9ad4] py-8 text-center">
+            <h1 class="text-white text-4xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
 
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
-                            <p class="text-gray-100">TEL : +66 2 9182060</p>
-                            <p class="text-gray-100">Fax : +66 2 918 2062</p>
-                        </div>
+            <div class="container mx-auto mt-6 flex flex-wrap justify-center gap-2 px-4">
+                <a href="index.html"><button
+                        class="bg-[#ff6600] text-white px-6 py-2 text-xs font-bold uppercase rounded shadow-sm">Home</button></a>
 
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
-                            <a href="mailto:info@aitengineering.co.th" class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
-                        </div>
-                    </div>
+                <button onclick="showBranch('khonkaen', this)"
+                    class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Khonkaen
+                    Branch</button>
+                <button onclick="showBranch('ratchaburi', this)"
+                    class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Ratchaburi
+                    Branch</button>
+                <button onclick="showBranch('rayong', this)"
+                    class="branch-btn text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Rayong
+                    Branch</button>
 
-                    <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
-                    <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    </div>
-                </div>
+                <button id="default-btn" onclick="showBranch('bangkok', this)"
+                    class="branch-btn bg-[#ff6600] text-white px-4 py-2 text-xs font-bold uppercase transition shadow-sm">Bangkok</button>
+            </div>
+        </section>
 
-                <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-                    <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
-                    
-                    <form class="space-y-5">
-                        <div class="grid grid-cols-1 gap-5">
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full Name</label>
-                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
+        <section class="bg-[#345e82] py-16 text-white min-h-[500px]">
+            <div class="container mx-auto px-4">
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div id="bangkok" class="branch-section">
+                    <div class="flex flex-col lg:flex-row gap-16">
+                        <div class="lg:w-1/2">
+                            <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Bangkok Head office
+                                Address</h2>
+
+                            <div class="mt-8 space-y-8 text-sm leading-relaxed">
                                 <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
-                                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
+                                    <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510
+                                        Thailand.</p>
                                 </div>
+
                                 <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
-                                    <input type="text" placeholder="Tel" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
+                                    <p class="text-gray-100">TEL : +66 2 9182060</p>
+                                    <p class="text-gray-100">Fax : +66 2 918 2062</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
+                                    <a href="mailto:info@aitengineering.co.th"
+                                        class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
-                                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
-
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
-                                <textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="pt-4">
-                            <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
-                            <div class="space-y-2 text-sm text-gray-200">
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">info@aitengineering.co.th</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">support@aitengineering.co.th</span>
-                                </label>
+                            <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
+                            <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                         </div>
 
-                        <button type="submit" class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-                </div>
-            </div>
+                        <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
 
+                            <form class="space-y-5">
+                                <div class="grid grid-cols-1 gap-5">
+                                    <div>
+                                        <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full
+                                            Name</label>
+                                        <input type="text" placeholder="Full Name"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    </div>
 
-            <div id="khonkaen" class="branch-section hidden">
-                <div class="flex flex-col lg:flex-row gap-16">
-                    <div class="lg:w-1/2">
-                    <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Khon Kaen Branch Address</h2>
-                    
-                    <div class="mt-8 space-y-8 text-sm leading-relaxed">
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
-                            <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
-                        </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label
+                                                class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
+                                            <input type="email" placeholder="Email"
+                                                class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
+                                            <input type="text" placeholder="Tel"
+                                                class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                        </div>
+                                    </div>
 
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
-                            <p class="text-gray-100">TEL : +66 2 9182060</p>
-                            <p class="text-gray-100">Fax : +66 2 918 2062</p>
-                        </div>
+                                    <div>
+                                        <label
+                                            class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
+                                        <input type="text" placeholder="Subject"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    </div>
 
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
-                            <a href="mailto:info@aitengineering.co.th" class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
+                                    <div>
+                                        <label
+                                            class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
+                                        <textarea rows="4" placeholder="Message"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4">
+                                    <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
+                                    <div class="space-y-2 text-sm text-gray-200">
+                                        <label class="flex items-center cursor-pointer group">
+                                            <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                            <span
+                                                class="group-hover:text-white transition">info@aitengineering.co.th</span>
+                                        </label>
+                                        <label class="flex items-center cursor-pointer group">
+                                            <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                            <span
+                                                class="group-hover:text-white transition">support@aitengineering.co.th</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
+                                    Send Message
+                                </button>
+                            </form>
                         </div>
                     </div>
+                </div>
 
-                    <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
-                    <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+
+                <div id="khonkaen" class="branch-section hidden">
+                    <div class="flex flex-col lg:flex-row gap-16">
+                        <div class="lg:w-1/2">
+                            <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Khon Kaen Branch Address
+                            </h2>
+
+                            <div class="mt-8 space-y-8 text-sm leading-relaxed">
+                                <div>
+                                    <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
+                                    <p class="text-gray-100">324/78 Mittraphap Road, T.Sila , A. Muang Khon Kaen , Khon
+                                        Kaen , 40000 Thailand.</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
+                                    <p class="text-gray-100">TEL : +66-(0)43 465 470</p>
+                                    <p class="text-gray-100">Fax : +66-(0)43 465 485</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
+                                    <a href="mailto:info@aitengineering.co.th"
+                                        class="text-blue-300 hover:underline">aitsales1@aitengineering.co.th</a>
+                                </div>
+                            </div>
+
+                            <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
+                            <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+                            <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Khon Kaen Branch</h2>
+
+                            <form class="space-y-5">
+                                <div class="grid grid-cols-1 gap-5">
+                                    <div>
+                                        <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full
+                                            Name</label>
+                                        <input type="text" placeholder="Full Name"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label
+                                                class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
+                                            <input type="email" placeholder="Email"
+                                                class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
+                                            <input type="text" placeholder="Tel"
+                                                class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label
+                                            class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
+                                        <input type="text" placeholder="Subject"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    </div>
+
+                                    <div>
+                                        <label
+                                            class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
+                                        <textarea rows="4" placeholder="Message"
+                                            class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4">
+                                    <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
+                                    <div class="space-y-2 text-sm text-gray-200">
+                                        <label class="flex items-center cursor-pointer group">
+                                            <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                            <span
+                                                class="group-hover:text-white transition">info@aitengineering.co.th</span>
+                                        </label>
+                                        <label class="flex items-center cursor-pointer group">
+                                            <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
+                                            <span
+                                                class="group-hover:text-white transition">support@aitengineering.co.th</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-                    <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
-                    
-                    <form class="space-y-5">
-                        <div class="grid grid-cols-1 gap-5">
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full Name</label>
-                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
-                                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
-                                    <input type="text" placeholder="Tel" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
-                                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
-
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
-                                <textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="pt-4">
-                            <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
-                            <div class="space-y-2 text-sm text-gray-200">
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">info@aitengineering.co.th</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">support@aitengineering.co.th</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
-                            Send Message
-                        </button>
-                    </form>
+                <div id="ratchaburi" class="branch-section hidden">
+                    <div class="text-center py-20">
+                        <h2 class="text-3xl font-bold">Ratchaburi Branch</h2>
+                        <p class="mt-4 text-gray-300 italic">Coming Soon - Information is being updated.</p>
+                    </div>
                 </div>
+
+                <div id="rayong" class="branch-section hidden">
+                    <div class="text-center py-20">
+                        <h2 class="text-3xl font-bold">Rayong Branch</h2>
+                        <p class="mt-4 text-gray-300 italic">Coming Soon - Information is being updated.</p>
+                    </div>
                 </div>
+
             </div>
-
-            <div id="ratchaburi" class="branch-section hidden">
-                <div class="text-center py-20">
-                    <h2 class="text-3xl font-bold">Ratchaburi Branch</h2>
-                    <p class="mt-4 text-gray-300 italic">Coming Soon - Information is being updated.</p>
-                </div>
-            </div>
-
-            <div id="rayong" class="branch-section hidden">
-                <div class="text-center py-20">
-                    <h2 class="text-3xl font-bold">Rayong Branch</h2>
-                    <p class="mt-4 text-gray-300 italic">Coming Soon - Information is being updated.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-</div>
-
-<footer class="bg-[#0a2540] py-10 text-white text-center">
-    <div class="container mx-auto px-4">
-        
-        <div class="mb-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
-            <div class="flex justify-center space-x-3">
-                <a href="#" class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-facebook-f text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-youtube text-xl"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
-            <p>
-                WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
-            </p>
-            <p class="text-sm font-medium">
-                +66 2 9182060
-            </p>
-        </div>
+        </section>
 
     </div>
-</footer>
 
-<script>
-function showBranch(branchId, btnElement) {
-    console.log("กำลังจะเปิดสาขา:", branchId); // เอาไว้ดูใน Console ว่าเปรมกดติดไหม
+    <footer class="bg-[#0a2540] py-10 text-white text-center">
+        <div class="container mx-auto px-4">
 
-    // 1. ซ่อนเนื้อหาทุกสาขา
-    const sections = document.querySelectorAll('.branch-section');
-    sections.forEach(sec => {
-        if (sec) sec.classList.add('hidden');
-    });
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
 
-    // 2. แสดงอันที่เลือก (เช็กก่อนว่ามี ID นี้จริงๆ ไหม)
-    const target = document.getElementById(branchId);
-    if (target) {
-        target.classList.remove('hidden');
-    } else {
-        console.error("แม่หาเนื้อหาที่มี ID นี้ไม่เจอจ้ะเปรม:", branchId);
-    }
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
 
-    // 3. ล้างสีส้มออกจาก "ทุกปุ่ม" ที่มีคลาส branch-btn
-    const allButtons = document.querySelectorAll('.branch-btn');
-    allButtons.forEach(btn => {
-        if (btn) {
-            btn.classList.remove('bg-[#ff6600]', 'shadow-sm');
-            // คืนค่าสีเดิมของปุ่ม (ถ้าเปรมไม่มีคลาสสีเดิมให้ใส่ไว้ด้วยนะ)
-            btn.classList.add('hover:bg-white/20'); 
+        </div>
+    </footer>
+
+    <script>
+        function showBranch(branchId, btnElement) {
+            console.log("กำลังจะเปิดสาขา:", branchId); // เอาไว้ดูใน Console ว่าเปรมกดติดไหม
+
+            // 1. ซ่อนเนื้อหาทุกสาขา
+            const sections = document.querySelectorAll('.branch-section');
+            sections.forEach(sec => {
+                if (sec) sec.classList.add('hidden');
+            });
+
+            // 2. แสดงอันที่เลือก (เช็กก่อนว่ามี ID นี้จริงๆ ไหม)
+            const target = document.getElementById(branchId);
+            if (target) {
+                target.classList.remove('hidden');
+            } else {
+                console.error("แม่หาเนื้อหาที่มี ID นี้ไม่เจอจ้ะเปรม:", branchId);
+            }
+
+            // 3. ล้างสีส้มออกจาก "ทุกปุ่ม" ที่มีคลาส branch-btn
+            const allButtons = document.querySelectorAll('.branch-btn');
+            allButtons.forEach(btn => {
+                if (btn) {
+                    btn.classList.remove('bg-[#ff6600]', 'shadow-sm');
+                    // คืนค่าสีเดิมของปุ่ม (ถ้าเปรมไม่มีคลาสสีเดิมให้ใส่ไว้ด้วยนะ)
+                    btn.classList.add('hover:bg-white/20');
+                }
+            });
+
+            // 4. ใส่สีส้มให้เฉพาะปุ่มที่เพิ่งกด
+            if (btnElement) {
+                btnElement.classList.add('bg-[#ff6600]', 'shadow-sm');
+                btnElement.classList.remove('hover:bg-white/20');
+            }
         }
-    });
+        window.onload = function () {
+            // 1. อ่านค่าจาก URL ว่ามีคำว่า ?branch=... ไหม
+            const urlParams = new URLSearchParams(window.location.search);
+            const branch = urlParams.get('branch');
 
-    // 4. ใส่สีส้มให้เฉพาะปุ่มที่เพิ่งกด
-    if (btnElement) {
-        btnElement.classList.add('bg-[#ff6600]', 'shadow-sm');
-        btnElement.classList.remove('hover:bg-white/20');
-    }
-}
-window.onload = function() {
-    // 1. อ่านค่าจาก URL ว่ามีคำว่า ?branch=... ไหม
-    const urlParams = new URLSearchParams(window.location.search);
-    const branch = urlParams.get('branch');
+            if (branch) {
+                // 2. ถ้ามีค่าส่งมา ให้สั่งรันฟังก์ชัน showBranch ที่เปรมทำไว้ได้เลย!
+                // เราต้องหาปุ่มที่ตรงกับสาขานั้นๆ เพื่อส่งไปเปลี่ยนสีด้วย
+                const targetBtn = document.querySelector(`button[onclick*="'${branch}'"]`);
+                showBranch(branch, targetBtn);
 
-    if (branch) {
-        // 2. ถ้ามีค่าส่งมา ให้สั่งรันฟังก์ชัน showBranch ที่เปรมทำไว้ได้เลย!
-        // เราต้องหาปุ่มที่ตรงกับสาขานั้นๆ เพื่อส่งไปเปลี่ยนสีด้วย
-        const targetBtn = document.querySelector(`button[onclick*="'${branch}'"]`);
-        showBranch(branch, targetBtn);
-        
-        // 3. (แถม) เลื่อนหน้าจอลงมาที่ส่วนเนื้อหาให้เองอัตโนมัติ
-        document.getElementById(branch).scrollIntoView({ behavior: 'smooth' });
-    }
-};
-</script>
+                // 3. (แถม) เลื่อนหน้าจอลงมาที่ส่วนเนื้อหาให้เองอัตโนมัติ
+                document.getElementById(branch).scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+    </script>
 
 </body>
+
 </html>

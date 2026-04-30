@@ -3,209 +3,264 @@
     "name": "304 Manifold Accessory",
     "sku": "304",
     "page": "measurement",
-    "category": "measurement,pressure,instrument",
-    "categoryTag": ["measurement","pressure","instrument"],
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/304_Manifold_Accessory.jpg",
-    "desc": "<p>รายละเอียดของรุ่น 304...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "304 Manifold Accessory",
+    "sku": "304",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/304_Manifold_Accessory.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "306 Manifold Accessory",
     "sku": "306",
     "page": "measurement",
-    "category": "",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/306_Manifold_Accessory.jpg",
-    "desc": "<p>รายละเอียดของรุ่น 306...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "306 Manifold Accessory",
+    "sku": "306",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/306_Manifold_Accessory.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "2051C Series",
     "sku": "2051C",
     "page": "measurement",
-    "category": "Pressure and Level",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2051C_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 2051 Coplanar™ Pressure Transmitter The Rosemount 2051 Coplanar Pressure Transmitter is industry-standard for differential and gage measurements. This safety-certified transmitter features a Local Operator Interface with easy-to-use menus and built-in configuration buttons, allowing you to easily commission the device. Engineered with the patented coplanar technology, this device offers installation flexibility for integrated pressure, flow or level solutions.</p>"
+  },
+  {
+    "name": "2051C Series",
+    "sku": "2051C",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/2051C_Series.jpg",
+    "desc": "<p>Rosemount™ 2051 Coplanar™ Pressure Transmitter The Rosemount 2051 Coplanar Pressure Transmitter is industry-standard for differential and gage measurements. This safety-certified transmitter features a Local Operator Interface with easy-to-use menus and built-in configuration buttons, allowing you to easily commission the device. Engineered with the patented coplanar technology, this device offers installation flexibility for integrated pressure, flow or level solutions.</p>"
   },
   {
     "name": "2051T Series",
     "sku": "2051T",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2051T_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 2051 In-Line Pressure Transmitter Work more efficiently with the Rosemount 2051 In-Line Pressure Transmitter, an industry standard device that delivers reliable process data. This transmitter provides accurate gage and absolute measurements and is delivered installation-ready. This pressure transmitter features an intuitive Local Operator Interface which streamlines commissioning and reduces the number of tools you need, for a cost-effective and capable solution.</p>"
+  },
+  {
+    "name": "2051T Series",
+    "sku": "2051T",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/2051T_Series.jpg",
+    "desc": "<p>Rosemount™ 2051 In-Line Pressure Transmitter Work more efficiently with the Rosemount 2051 In-Line Pressure Transmitter, an industry standard device that delivers reliable process data. This transmitter provides accurate gage and absolute measurements and is delivered installation-ready. This pressure transmitter features an intuitive Local Operator Interface which streamlines commissioning and reduces the number of tools you need, for a cost-effective and capable solution.</p>"
   },
   {
     "name": "2051L Series",
     "sku": "2051L",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2051L_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 2051L Level Transmitter Gain confidence with the reliable performance of the Rosemount 2051L Level Transmitter, a transmitter that provides level measurements with a variety of process connections, materials and output protocols. This transmitter is safety certified, and allows for Tuned-System™ Level assembly and direct mounting. Engineered with a Local Operator Interface (LOI), this device offers easy, on-site commissioning.</p>"
+  },
+  {
+    "name": "2051L Series",
+    "sku": "2051L",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/2051L_Series.jpg",
+    "desc": "<p>Rosemount™ 2051L Level Transmitter Gain confidence with the reliable performance of the Rosemount 2051L Level Transmitter, a transmitter that provides level measurements with a variety of process connections, materials and output protocols. This transmitter is safety certified, and allows for Tuned-System™ Level assembly and direct mounting. Engineered with a Local Operator Interface (LOI), this device offers easy, on-site commissioning.</p>"
   },
   {
 
     "name": "2088 Series",
     "sku": "2088",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2088_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 2088 Gage and Absolute Pressure Transmitter With the Rosemount 2088 Gage and Absolute Pressure Transmitter, you can keep on schedule with a quick and easy-to-install solution. This transmitter features a Local Operator Interface (LOI) that has easy-to-use menus and built-in configuration buttons, so you can commission the device on the spot without complicated tools. This pressure transmitter is also available with manifolds and remote seals.</p>"
+  },
+  {
+
+    "name": "2088 Series",
+    "sku": "2088",
+    "page": "products",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
+    "img": "imgpro/2088_Series.jpg",
+    "desc": "<p>Rosemount™ 2088 Gage and Absolute Pressure Transmitter With the Rosemount 2088 Gage and Absolute Pressure Transmitter, you can keep on schedule with a quick and easy-to-install solution. This transmitter features a Local Operator Interface (LOI) that has easy-to-use menus and built-in configuration buttons, so you can commission the device on the spot without complicated tools. This pressure transmitter is also available with manifolds and remote seals.</p>"
   },
   {
     "name": "2090 Series",
     "sku": "2090",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2090_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 2090P Pulp and Paper Pressure TransmitterWith its compact size and rugged construction, the Rosemount 2090P Pulp and Paper Pressure Transmitter is ideal for the pulp and paper industries. This lightweight transmitter is engineered with a 1 in. flush mount compatible with PMC process connection or 1 1/2 in. threaded mounting connection. This transmitter can be calibrated to ranges as low as 0 to 1.5 psi (0.1 bar) and as high as 0 to 300 psi (20.7 bar) for reliable measurement capabilities.</p>"
   },
   {
     "name": "2140 Vibrating Fork",
-    "sku": "2140",
+    "sku": "2140 Vibrating Fork",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/2140_Vibrating_Fork.png",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>The Rosemount™ 2140 is the world's first wired HART® vibrating fork level detector for overfill prevention, alarms, and pump protection. Providing reliable detection of liquids and sediments, it offers ease-of-use with smart diagnostics monitoring device health and integrated remote proof-testing, increasing safety and efficiency. The Rosemount 2140:SIS is certified to IEC 61508 (SIL 2) for safety-critical applications.</p>"
   },
   {
     "name": "3051C Series",
     "sku": "3051C",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/3051C_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 3051 Coplanar™ Pressure TransmitterBenefit from industry-leading performance and patented technology with the Rosemount 3051 Coplanar Pressure Transmitter. With over 10 million devices installed, this pressure transmitter family offers an all-in-one solution for pressure, level and flow measurement. Engineered with a coplanar flange for installation and application flexibility, this transmitter is easy to install and designed with direct process mounting capability for cost-effective installation and efficiency.</p>"
   },
   {
     "name": "3051S Series",
     "sku": "3051S",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/3051S_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 3051S Coplanar™ Pressure Transmitter The Rosemount 3051S Coplanar™ Pressure Transmitter is designed with the patented Coplanar technology and is the no-equal solution for pressure, flow and level measurements. This scalable platform seamlessly integrates with manifolds, primary elements and seal solutions and optimizes performance for accurate differential, gage and absolute pressure measurements. With the SuperModule™ platform, this transmitter resists overpressure and line pressure effects to maintain unmatched performance.</p>"
   },
   {
     "name": "3051S Series ver2",
     "sku": "3051S",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/3051S_Series_ver2.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 3051S Coplanar™ Pressure Transmitter The Rosemount 3051S Coplanar™ Pressure Transmitter is designed with the patented Coplanar technology and is the no-equal solution for pressure, flow and level measurements. This scalable platform seamlessly integrates with manifolds, primary elements and seal solutions and optimizes performance for accurate differential, gage and absolute pressure measurements. With the SuperModule™ platform, this transmitter resists overpressure and line pressure effects to maintain unmatched performance.</p>"
   },
   {
     "name": "3051T Series",
     "sku": "3051T",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/3051T_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 3051 In-Line Pressure Transmitter Confidently measure pressure and level with the Rosemount 3051 In-Line Pressure Transmitter. Engineered for 10-year installed stability and 0.04% of span accuracy, this industry-leading pressure transmitter provides you with the information necessary to run, control and monitor processes. The Rosemount 3051 includes features that meet your pressure measurement needs, such as a wide rangedown and Power Advisory diagnostics and is suitable for safety installations.</p>"
   },
   {
     "name": "R305 Manifold Accessory",
     "sku": "R305",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/R305_Manifold_Accessory.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "Rosemount-3408 Level Transmitter-Non-Contacting Radar",
     "sku": "3408",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/Rosemount-3408_Level_Transmitter-Non-Contacting_Radar.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "Rosemount-5408 Non Contacting Radar Transmitter",
     "sku": "5408",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "pressure",
+    "category": "Measurement and Instrumentation, Pressure and Level",
+    "categoryTag": ["measurement-and-instrumentation","pressure-and-level"],
     "img": "imgpro/Rosemount-5408_Non_Contacting_Radar_Transmitter.png",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "114C Thermowell Series",
     "sku": "114C",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/114C_Thermowell_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 114C Thermowell Engineered with solid barstock, the Rosemount 114C Thermowell is designed to accommodate a host of industry-standard configurations while ensuring strength and integrity for your process measurements. This flexible thermowell solution is available in threaded, flanged, Van Stone and welded mounting styles with straight, tapered or stepped stem profiles to meet a variety of application requirements. This product is offered in a large selection of materials for process adaptability and compatibility.</p>"
   },
   {
     "name": "214C RTD Sensor",
     "sku": "214C",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/214C_RTD_Sensor.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 214C RTD Temperature Sensor The Rosemount 214C RTD Temperature Sensor is a Pt-100, single or dual element resistant temperature detector (RTD) that covers a wide range of temperatures, from -321 to 1112°F (-196 to 600°C). An exceptional solution, this sensor has a thin-film and wire-wound design for application flexibility. With many calibration options, including Class A or B sensor accuracy, this sensor also offers Callendar-Van Dusen constants for transmitter-sensor matching to provide the highest level of accuracy.</p>"
   },
   {
     "name": "214C Thermocouple Series",
     "sku": "214C",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/214C_Thermocouple_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 214C Thermocouple Temperature SensorThe Rosemount 214C Thermocouple Temperature Sensor is an industry-standard sensor that features resilience and durability in tough process environments. This sensor offers J, K and T thermocouple types and meets ASTM and IEC standards for thermocouple accuracy tolerance. Engineered to provide good performance in high vibration conditions, this sensor also covers a wide range of temperatures and is available in single or dual configurations with grounded or ungrounded junctions.</p>"
   },
   {
     "name": "248 Head Mount Series",
     "sku": "248",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/248_Head_Mount_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 248 Rail Mount Temperature Transmitter An industry-standard solution, the Rosemount 248 Temperature Transmitter delivers consistent and reliable performance for process environments. Engineered to meet requirements for common single point temperature measurement applications, its durable design withstands a wide range of process environments. For application flexibility, this temperature transmitter is available in a rail or head mount configuration as well as a variety of housing options.</p>"
   },
   {
     "name": "248 Rail Mount Series",
     "sku": "248",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/248_Rail_Mount_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 248 Rail Mount Temperature Transmitter An industry-standard solution, the Rosemount 248 Temperature Transmitter delivers consistent and reliable performance for process environments. Engineered to meet requirements for common single point temperature measurement applications, its durable design withstands a wide range of process environments. For application flexibility, this temperature transmitter is available in a rail or head mount configuration as well as a variety of housing options.</p>"
   },
   {
     "name": "644 Series",
     "sku": "644",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/644_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Rosemount™ 644 Temperature Transmitter Engineered for versatility, the Rosemount 644 Temperature Transmitter is available with HART®, FOUNDATION™ Fieldbus or PROFIBUS® protocols in head, field or rail mount styles and a variety of enclosure options. By adding a Local Operator Interface (LOI), you can update your transmitter configuration in the field without tools. For diverse application requirements, this transmitter includes diagnostic capabilities, such as Hot Backup™ capability, sensor drift alert and thermocouple degradation.</p>"
   },
   {
     "name": "Rosemount-3144P Temperature Transmitter",
     "sku": "3144P",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/Rosemount-3144P_Temperature_Transmitter.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "Rosemount-P-X-well Technology",
     "sku": "P-X-well",
     "page": "measurement",
-    "category": "Temperature",
-    "categoryTag": "temperature",
+    "category": ["Measurement and Instrumentation, Temperature"],
+    "categoryTag": ["measurement-and-instrumentation","temperature"],
     "img": "imgpro/Rosemount-P-X-well_Technology.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "405 Compact Orifice Plate",
@@ -214,7 +269,7 @@
     "category": "Flow",
     "categoryTag": "flow",
     "img": "imgpro/405_Compact_Orifice_Plate.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "585 Annubar Primary Element",
@@ -223,7 +278,7 @@
     "category": "Flow",
     "categoryTag": "flow",
     "img": "imgpro/585_Annubar_Primary_Element.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "2051CFA Annubar",
@@ -232,7 +287,7 @@
     "category": "Flow",
     "categoryTag": "flow",
     "img": "imgpro/2051CFA_Annubar.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "2051CFC Compact Annubar Series",
@@ -241,7 +296,7 @@
     "category": "Flow",
     "categoryTag": "flow",
     "img": "imgpro/2051CFC_Compact_Annubar_Series.jpg",
-    "desc": "<p>Engineered with solid barstock...</p>"
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
     "name": "3051SFA Annubar Series",
@@ -1501,6 +1556,294 @@
     "category": "Valves and Accessories, Valve Accessories, Position and Position Transmitter",
     "categoryTag": ["valve-and-accessories","valve-accessories","position-and-position-transmitter"],
     "img": "imgpro2/Westlock_K20_Electro-pneumatic_Positioner.jfif",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Turboblower",
+    "sku": "Turboblower",
+    "page": "machines",
+    "category": "Machines and Process System, China Zhenxin Turbo Machine",
+    "categoryTag": ["machines-and-process-system","chaina-zhenxin-turbo-machine"],
+    "img": "imgpro3/Turboblower.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Turboblower Single Stage",
+    "sku": "Turboblower Single Stage",
+    "page": "machines",
+    "category": "Machines and Process System, China Zhenxin Turbo Machine",
+    "categoryTag": ["machines-and-process-system","chaina-zhenxin-turbo-machine"],
+    "img": "imgpro3/Turboblower_Single_Stage.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Deflaker",
+    "sku": "Deflaker",
+    "page": "system",
+    "category": "System and Equipment, Deflaker-Airaghi SRL",
+    "categoryTag": ["system-and-equipment","deflaker"],
+    "img": "imgpro4/Deflaker.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax 2w2 persp-1",
+    "sku": "kinax-2w2-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Angle transmitter",
+    "categoryTag": ["camille-bauer","angle-transmitter"],
+    "img": "imgpro7/kinax_2w2_persp-1-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax 3w2 persp-1",
+    "sku": "kinax-3w2-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Angle transmitter",
+    "categoryTag": ["camille-bauer","angle-transmitter"],
+    "img": "imgpro7/kinax_3w2_persp-1-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax wt707 persp-1",
+    "sku": "kinax-wt707-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Angle transmitter",
+    "categoryTag": ["camille-bauer","angle-transmitter"],
+    "img": "imgpro7/kinax_wt707_persp-1-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax wt717 persp-1",
+    "sku": "kinax-wt717-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Angle transmitter",
+    "categoryTag": ["camille-bauer","angle-transmitter"],
+    "img": "imgpro7/kinax_wt717_persp-1-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax wt720 persp-1",
+    "sku": "kinax-wt720-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Angle transmitter",
+    "categoryTag": ["camille-bauer","angle-transmitter"],
+    "img": "imgpro7/kinax_wt720_persp-1-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax n702 inox persp-2",
+    "sku": "kinax-n702-inox-persp-2",
+    "page": "camille",
+    "category": "Camille Bauer, Inclination transmitter",
+    "categoryTag": ["camille-bauer","inclination-transmitter"],
+    "img": "imgpro7/kinax_n702_inox_persp-2-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "kinax n702 ssi persp-2",
+    "sku": "kinax-n702-ssi-persp-2",
+    "page": "camille",
+    "category": "Camille Bauer, Inclination transmitter",
+    "categoryTag": ["camille-bauer","inclination-transmitter"],
+    "img": "imgpro7/kinax_n702_ssi_persp-2-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sineax am1000 image front",
+    "sku": "sineax-am1000-image-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sineax_am1000_image_front_96x96-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sineax am3000 front",
+    "sku": "sineax-am3000-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sineax_am3000_front_144x144-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sineax dm5 front best seller",
+    "sku": "sineax-dm5-front-best-seller",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sineax_dm5_front-best-seller-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sineax dm5000 front",
+    "sku": "sineax-dm5000-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sineax_dm5000_front-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sineax v604s front",
+    "sku": "sineax-v604s-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sineax_v604s_front-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bm1250 front image",
+    "sku": "sirax-bm1250-front-image",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bm1250_front_image-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bm1400 front image",
+    "sku": "sirax-bm1400-front-image",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bm1400_front_image-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bm1450 front image DC",
+    "sku": "sirax-bm1450-front-image-DC",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bm1450_front_image_DC-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bt5100-1 persp-1",
+    "sku": "sirax-bt5100-1-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bt5100-1_persp-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bt5210 persp-1-new",
+    "sku": "sirax-bt5210-persp-1-new",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bt5210_persp-1-new-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bt5400-1 persp-1",
+    "sku": "sirax-bt5400-1-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bt5400-1_persp-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bt5600 persp-1 klein",
+    "sku": "sirax-bt5600-persp-1-klein",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bt5600_persp-1-klein-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax bt5700 persp-1",
+    "sku": "sirax-bt5700-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_bt5700_persp-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax mt7000 persp-1",
+    "sku": "sirax-mt7000-persp-1",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_mt7000_persp-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "sirax mt7100 persp-2",
+    "sku": "sirax-mt7100-persp-2",
+    "page": "camille",
+    "category": "Camille Bauer, Power monitoring",
+    "categoryTag": ["camille-bauer","power-monitoring"],
+    "img": "imgpro7/sirax_mt7100_persp-2-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "hdpq guideplus front image",
+    "sku": "hdpq-guideplus-front-image",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/hdpq_guideplus_front_image-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "linax cl front image",
+    "sku": "linax-cl-front-image",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/linax_cl_front_image-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "linax pq single rack front",
+    "sku": "linax-pq-single-rack-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/linax_pq-single-rack_front-600x600.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "linax pq1000 front ",
+    "sku": "linax-pq1000-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/linax_pq1000_front-96x96-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "linax pq3000 front ",
+    "sku": "linax-pq3000-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/linax_pq3000_front-144x144-1-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "linax pq5000 front ",
+    "sku": "linax-pq5000-front",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/linax_pq5000_front-600x600.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "pq5000mob front image",
+    "sku": "pq5000mob-front-image",
+    "page": "camille",
+    "category": "Camille Bauer, Power quality",
+    "categoryTag": ["camille-bauer","power-quality"],
+    "img": "imgpro7/pq5000mob-front_image-1-600x600.jpg",
     "desc": "<p>Engineered with solid barstock...</p>"
   }
   

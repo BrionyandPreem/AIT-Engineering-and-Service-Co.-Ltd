@@ -1,92 +1,164 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <title>AIT Engineering and Service</title>
-    
+
     <style>
         .hero-bg {
             /* ปรับแต่ง Gradient และรูปภาพให้ดู Modern ขึ้น */
-            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)), 
-                              url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)),
+                url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* เพิ่มลูกเล่นเวลา Scroll */
+            background-attachment: fixed;
+            /* เพิ่มลูกเล่นเวลา Scroll */
         }
+
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body class="font-sans">
 
-    <header class="bg-white shadow-sm">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 
             <div class="flex items-center space-x-3">
-                <img src="AITlogo.jpg" 
-                     alt="AIT Engineering & Service Logo" 
-                     class="h-10 w-auto object-contain">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
             </div>
 
-        <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
                 <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
                 <a href="about.html" class="hover:text-orange-500">About Us </a>
-            
-            <li class="relative group h-full flex items-center">
-                <a href="products.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
-                PRODUCTS & SERVICES
-                <i class="fa-solid fa-caret-down text-[10px]"></i>
-                </a>
 
-            <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
-               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
-               transition-all duration-300 z-50">
-            <li><a href="1measurement.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Measurement and Instrumentation</a></li>
-            <li><a href="2valves.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
-            <li><a href="3machines.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a></li>
-            <li><a href="4system.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
-            <li><a href="5innovation.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
-            <li><a href="6service.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
-            <li><a href="7camille.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
-            </ul>
-            </li>
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
 
                 <a href="videos.html" class="hover:text-orange-500">Videos</a>
-                <a href="activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="activities.html" class="hover:text-orange-500">Activities <i
+                        class="fa-solid fa-caret-down text-[10px]"></i></a>
 
-            <li class="relative group h-full flex items-center">
-                <a href="contact.html" class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
-                CONTACT
-                <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
-                </a>
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
 
-            <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
-               opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
-               transition-all duration-300 z-50">
-        
-            <li><a href="contact.html?branch=bangkok" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
-                <i class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a>
-            </li>
-            <li><a href="contact.html?branch=ratchaburi" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a>
-            </li>
-            <li><a href="contact.html?branch=rayong" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a>
-            </li>
-            <li><a href="contact.html?branch=khonkaen" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3">
-                <i class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a>
-            </li>
-            </ul>
-            </li>
-        </nav>
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
+            </nav>
 
-            <div class="bg-gray-100 p-2 rounded">
-                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -113,399 +185,442 @@
             <img src="logo/logo-02.png" alt="Micro Motion" class="h-12">
             <img src="logo/logo-03.png" alt="airaghi" class="h-8">
             <img src="logo/logo-04.png" alt="Rosemount" class="h-10">
-            <img src="logo/logo-05.png" alt="Emerson" class="h-12">            
+            <img src="logo/logo-05.png" alt="Emerson" class="h-12">
             <img src="logo/logo-06.png" alt="Shafer" class="h-10">
         </div>
     </section>
 
-<section class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase border-b border-gray-200 pb-2">Product & Service</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="1-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
-            </div>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase border-b border-gray-200 pb-2">Product & Service
+            </h2>
 
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="2-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="1-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
 
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="3-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
-            </div>
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="2-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
 
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="4-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
-            </div>
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="3-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
 
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="5-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
-            </div>
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="4-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
 
-            <div class="relative group overflow-hidden cursor-pointer">
-                <img src="6-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="5-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
+
+                <div class="relative group overflow-hidden cursor-pointer">
+                    <img src="6-1.jpg" class="w-full h-auto transition duration-300 group-hover:scale-105">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-8 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-[#1a4066] text-xl font-bold mb-10 uppercase">Product & Service</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
-            <div class="flex flex-col items-center">
-                <div class="h-48 flex items-center mb-4">
-                    <img src="p-0-1.jpg" alt="WT707" class="max-h-full">
-                </div>
-                <h3 class="text-blue-500 text-xs font-bold mb-1">WT707</h3>
-                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
-                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
-            </div>
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[#1a4066] text-xl font-bold mb-10 uppercase">Product & Service</h2>
 
-            <div class="flex flex-col items-center">
-                <div class="h-48 flex items-center mb-4">
-                    <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-full">
-                </div>
-                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock K20 Electro-pneumatic Positioner – ATEX / IEC, NEC</h3>
-                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
-                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
-            </div>
-
-            <div class="flex flex-col items-center">
-                <div class="h-48 flex items-center mb-4">
-                    <img src="p-0-3.jpg" alt="Westlock K20" class="max-h-full">
-                </div>
-                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 6000-Series</h3>
-                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
-                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
-            </div>
-
-            <div class="flex flex-col items-center">
-                <div class="h-48 flex items-center mb-4">
-                    <img src="p-0-4.png" alt="Westlock K20" class="max-h-full">
-                </div>
-                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 5000-Series Intrinsically Safe, NEC Positioner</h3>
-                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
-                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
-            </div>
-
-            <div class="flex flex-col items-center">
-                <div class="h-48 flex items-center mb-4">
-                    <img src="p-0-5.png" alt="Westlock K20" class="max-h-full">
-                </div>
-                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock Digital EPIC-2</h3>
-                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
-                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">Videos</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="relative aspect-video bg-black rounded overflow-hidden shadow-lg group cursor-pointer">
-                <img src="https://via.placeholder.com/640x360?text=Bettis+MOV+Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-2xl">
-                        <i class="fa-solid fa-play"></i>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="h-48 flex items-center mb-4">
+                        <img src="p-0-1.jpg" alt="WT707" class="max-h-full">
                     </div>
+                    <h3 class="text-blue-500 text-xs font-bold mb-1">WT707</h3>
+                    <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                    <button
+                        class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read
+                        more</button>
                 </div>
-                <div class="absolute bottom-2 left-2 text-white text-xs font-bold drop-shadow-md">
-                    Bettis MOV wireless control by AIT
-                </div>
-            </div>
 
-            <div class="relative aspect-video bg-black rounded overflow-hidden shadow-lg group cursor-pointer">
-                <img src="https://via.placeholder.com/640x360?text=Bettis+CBA+Video" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-2xl">
-                        <i class="fa-solid fa-play"></i>
+                <div class="flex flex-col items-center">
+                    <div class="h-48 flex items-center mb-4">
+                        <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-full">
                     </div>
-                </div>
-                <div class="absolute bottom-2 left-2 text-white text-xs font-bold drop-shadow-md">
-                    BETTIS CBA fail mode reversal by AIT
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mt-10">
-            <button class="bg-[#e11d48] text-white px-6 py-2 rounded-md font-bold text-sm flex items-center mx-auto hover:bg-red-700 transition">
-                <i class="fa-solid fa-play-circle mr-2"></i> ดูวิดีโอเพิ่มเติม
-            </button>
-        </div>
-    </div>
-</section>
-
-<section class="py-10 bg-white text-center">
-    <h1 class="text-[#008000] text-3xl font-bold uppercase">About US AIT</h1>
-</section>
-
-<section class="py-12 bg-gradient-to-b from-[#e0f2fe] to-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">Company Profile</h2>
-        
-        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
-            <div class="w-full md:w-1/3 flex justify-center">
-                <img src="Boss-2.png" alt="Management" class="h-[300px] w-auto object-contain">
-            </div>
-
-            <div class="w-full md:w-2/3 text-center md:text-left">
-                <div class="mb-8">
-                    <h3 class="text-orange-600 font-bold uppercase mb-2">Message From Management</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        We believe in values of people. We make customer trust us on quality work. We believe in integrity.
-                    </p>
+                    <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock K20
+                        Electro-pneumatic Positioner – ATEX / IEC, NEC</h3>
+                    <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                    <button
+                        class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read
+                        more</button>
                 </div>
 
-                <div class="mb-8">
-                    <h3 class="text-orange-600 font-bold uppercase mb-2">Vision</h3>
-                    <p class="text-gray-600 text-sm italic">
-                        Creative Innovations for Sustainable Industry
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-orange-600 font-bold uppercase mb-3">Value</h3>
-                    <ul class="text-gray-500 text-xs space-y-2 list-disc list-inside inline-block text-left">
-                        <li>Family culture</li>
-                        <li>Honesty, Integrity, and fairness</li>
-                        <li>Strive for development, focus on learning, and achieve excellence</li>
-                        <li>High standard work without compromising safety</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">History</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[13px] text-gray-600 leading-relaxed">
-            <div>
-                <p class="font-bold text-gray-800 mb-2">Established in September 2002,</p>
-                <p class="mb-4">AIT Engineering and Service Co., Ltd. aims to be Thailand's leading instrument and service provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies in various industries.</p>
-                <p class="mb-4">Providing engineering and services to meet growing customer demands.</p>
-                <p class="mb-4 italic">Our portfolio consists of BETTIS, EIM, EL O MATIC, SHAFER, and HYTORK Actuation), ROSEMOUNT (Field Instruments), MICROMOTION (Flow) and CAMILLE BAUER (Isolators and Angle transmitters).</p>
-                <p class="mb-6">We offer the best solution to our customers with our well trained staffs and successfully proven products.</p>
-                
-                <ul class="space-y-1">
-                    <li>2002 – AIT Engineering and Services was established.</li>
-                    <li>2005 – Added office in Banpong Area near SCG Packaging.</li>
-                </ul>
-            </div>
-
-            <div class="space-y-2">
-                <p>2006 – Appointed by Emerson Process Management as the local business partner for the Pulp and paper industry.</p>
-                <p>2010 – Added another office in Khon Kaen (North east Thailand)</p>
-                <p>2012 – Rented an office in Rayong and started selling valves and actuators in that area.</p>
-                <p>2013 – Started to use ISO Standards for the whole company operations.</p>
-                <p>2014 – Applied for the Bureau Veritas Seal for management system standards.</p>
-                <p>2015 – Passed the Bureau Veritas Certification and was certified for Sales, installation and after sales.</p>
-                <p>• Relocated the Rayong office to its current place with the new 500 sq.m workshop.</p>
-                <p>2018 – Signed contract with PMT S.r.l</p>
-                <p>2020 – Signed contract with Airaghi S.r.l.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-12 bg-gray-50 border-t">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-[#008000] text-3xl font-bold uppercase mb-4">Activities</h2>
-        <div class="w-full border-t border-dotted border-gray-400 mb-8 max-w-4xl mx-auto"></div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A1.jpg" class="w-full h-auto">
-            </div>
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A2.jpg" class="w-full h-auto">
-            </div>
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A3.jpg" class="w-full h-auto">
-            </div>
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A4.jpg" class="w-full h-auto">
-            </div>
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A5.jpg" class="w-full h-auto">
-            </div>
-            <div class="bg-white p-1 shadow-sm border border-gray-200">
-                <img src="A6.jpg" class="w-full h-auto">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-4 text-center">
-        
-        <div class="relative flex py-5 items-center mb-12">
-            <div class="flex-grow border-t border-dotted border-gray-400"></div>
-            <span class="flex-shrink mx-4 text-[#1a5d2c] text-3xl font-bold uppercase tracking-wide">Accomplishment</span>
-            <div class="flex-grow border-t border-dotted border-gray-400"></div>
-        </div>
-
-        <div class="mb-10">
-            <p class="text-gray-500 text-xs uppercase tracking-widest font-bold">
-                PTTGC BRANCH#6 REFINERY PLANT TURNAROUND PROJECT
-            </p>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="relative group max-w-4xl w-full px-4">
-                <div class="bg-white p-2 shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-sm transition-transform duration-500 group-hover:scale-[1.02]">
-                    <img src="Cert.PTT.jpg" alt="PTTGC Certificate of Achievement" class="w-full h-auto border border-gray-100">
-                </div>
-                
-                <div class="mt-8 text-center">
-                    <div class="inline-block w-12 h-1 bg-orange-500 mb-4"></div>
-                    <p class="text-gray-600 text-sm italic">
-                        "Awarded for Control Valve (Bettis) Overhaul and Inspection Service Package"
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="bg-[#5a9ad4] py-6 text-center shadow-inner">
-    <h1 class="text-white text-3xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
-</section>
-
-<section class="bg-[#5a9ad4] pb-6">
-    <div class="container mx-auto flex flex-wrap justify-center gap-2">
-        <button class="bg-[#ff6600] text-white px-5 py-2 text-xs font-bold uppercase rounded shadow-md">Home</button>
-        <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Khonkaen Branch</button>
-        <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Ratchaburi Branch</button>
-        <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Rayong Branch</button>
-        <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition border-b-2 border-white">Bangkok (Head Office)</button>
-    </div>
-</section>
-
-<section class="bg-[#345e82] py-12 text-white">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col lg:flex-row gap-12">
-            
-            <div class="lg:w-1/2">
-                <h2 class="text-xl font-bold mb-1 border-b border-gray-400 pb-2">Bangkok Head office Address</h2>
-                
-                <div class="mt-6 space-y-6 text-sm">
-                    <div>
-                        <p class="font-bold text-gray-200 uppercase mb-1">Address:</p>
-                        <p>75/76 ,Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
+                <div class="flex flex-col items-center">
+                    <div class="h-48 flex items-center mb-4">
+                        <img src="p-0-3.jpg" alt="Westlock K20" class="max-h-full">
                     </div>
-
-                    <div>
-                        <p class="font-bold text-gray-200 uppercase mb-1">Telephone :</p>
-                        <p>TEL : +66 2 9182060</p>
-                        <p>Fax : +66 2918 2062</p>
-                    </div>
-
-                    <div>
-                        <p class="font-bold text-gray-200 uppercase mb-1">E-mail:</p>
-                        <p>info@aitengineering.co.th</p>
-                    </div>
+                    <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 6000-Series
+                    </h3>
+                    <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                    <button
+                        class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read
+                        more</button>
                 </div>
 
-                <h3 class="text-xl font-bold mt-10 mb-6">แผนที่และการเดินทาง</h3>
-                <div class="rounded-lg overflow-hidden border-2 border-white/20 shadow-xl h-[300px] bg-gray-200">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0!2d100.7!3d13.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ4JzAwLjAiTiAxMDDCsDQyJzAwLjAiRQ!5e0!3m2!1sth!2sth!4v1711690000000!5m2!1sth!2sth" 
-                        class="w-full h-full border-0" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <div class="flex flex-col items-center">
+                    <div class="h-48 flex items-center mb-4">
+                        <img src="p-0-4.png" alt="Westlock K20" class="max-h-full">
+                    </div>
+                    <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 5000-Series
+                        Intrinsically Safe, NEC Positioner</h3>
+                    <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                    <button
+                        class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read
+                        more</button>
                 </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="h-48 flex items-center mb-4">
+                        <img src="p-0-5.png" alt="Westlock K20" class="max-h-full">
+                    </div>
+                    <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock Digital EPIC-2</h3>
+                    <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                    <button
+                        class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read
+                        more</button>
+                </div>
+
             </div>
+        </div>
+    </section>
 
-            <div class="lg:w-1/2">
-                <h2 class="text-xl font-bold mb-6">Contact Bangkok (Head office)</h2>
-                
-                <form class="space-y-4 text-gray-700">
-                    <div>
-                        <label class="block text-white text-xs mb-1 font-bold">Full Name</label>
-                        <input type="text" placeholder="Full Name" class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    </div>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">Videos</h2>
 
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <div class="flex-1">
-                            <label class="block text-white text-xs mb-1 font-bold">Email</label>
-                            <input type="email" placeholder="Email" class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
-                        </div>
-                        <div class="flex-1">
-                            <label class="block text-white text-xs mb-1 font-bold">Tel.</label>
-                            <input type="text" placeholder="Tel" class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="relative aspect-video bg-black rounded overflow-hidden shadow-lg group cursor-pointer">
+                    <img src="https://via.placeholder.com/640x360?text=Bettis+MOV+Video"
+                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
+                    <div class="absolute bottom-2 left-2 text-white text-xs font-bold drop-shadow-md">
+                        Bettis MOV wireless control by AIT
+                    </div>
+                </div>
 
-                    <div>
-                        <label class="block text-white text-xs mb-1 font-bold">Subject</label>
-                        <input type="text" placeholder="Subject" class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <div class="relative aspect-video bg-black rounded overflow-hidden shadow-lg group cursor-pointer">
+                    <img src="https://via.placeholder.com/640x360?text=Bettis+CBA+Video"
+                        class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-2xl">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-2 left-2 text-white text-xs font-bold drop-shadow-md">
+                        BETTIS CBA fail mode reversal by AIT
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <button
+                    class="bg-[#e11d48] text-white px-6 py-2 rounded-md font-bold text-sm flex items-center mx-auto hover:bg-red-700 transition">
+                    <i class="fa-solid fa-play-circle mr-2"></i> ดูวิดีโอเพิ่มเติม
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 bg-white text-center">
+        <h1 class="text-[#008000] text-3xl font-bold uppercase">About US AIT</h1>
+    </section>
+
+    <section class="py-12 bg-gradient-to-b from-[#e0f2fe] to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">Company Profile</h2>
+
+            <div class="max-w-3xl mx-auto flex flex-col gap-10">
+
+                <div class="w-full text-left">
+                    <div class="mb-8">
+                        <h3 class="text-orange-600 font-bold uppercase mb-2">Message From Management</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            We believe in values of people. We make customer trust us on quality work. We believe in
+                            integrity.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-orange-600 font-bold uppercase mb-2">Vision</h3>
+                        <p class="text-gray-600 text-sm italic border-l-4 border-orange-200 pl-4">
+                            Creative Innovations for Sustainable Industry
+                        </p>
                     </div>
 
                     <div>
-                        <label class="block text-white text-xs mb-1 font-bold">Message</label>
-                        <textarea rows="5" placeholder="Message" class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-                    </div>
-
-                    <div class="mt-4">
-                        <p class="text-white text-xs font-bold mb-2">Send To</p>
-                        <ul class="text-xs space-y-1 text-gray-200">
-                            <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-2"></span> info@aitengineering.co.th</li>
-                            <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-2"></span> support@aitengineering.co.th</li>
+                        <h3 class="text-orange-600 font-bold uppercase mb-3">Value</h3>
+                        <ul class="text-gray-500 text-xs space-y-2 list-disc list-inside">
+                            <li>Family culture</li>
+                            <li>Honesty, Integrity, and fairness</li>
+                            <li>Strive for development, focus on learning, and achieve excellence</li>
+                            <li>High standard work without compromising safety</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <button type="submit" class="w-full bg-[#5cb85c] hover:bg-green-600 text-white font-bold py-2 mt-4 transition rounded uppercase">
-                        Send
-                    </button>
-                </form>
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[#1a4066] text-xl font-bold mb-8 uppercase">History</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[13px] text-gray-600 leading-relaxed">
+                <div>
+                    <p class="font-bold text-gray-800 mb-2">Established in September 2002,</p>
+                    <p class="mb-4">AIT Engineering and Service Co., Ltd. aims to be Thailand's leading instrument and
+                        service provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies in
+                        various industries.</p>
+                    <p class="mb-4">Providing engineering and services to meet growing customer demands.</p>
+                    <p class="mb-4 italic">Our portfolio consists of BETTIS, EIM, EL O MATIC, SHAFER, and HYTORK
+                        Actuation), ROSEMOUNT (Field Instruments), MICROMOTION (Flow) and CAMILLE BAUER (Isolators and
+                        Angle transmitters).</p>
+                    <p class="mb-6">We offer the best solution to our customers with our well trained staffs and
+                        successfully proven products.</p>
+
+                    <ul class="space-y-1">
+                        <li>2002 – AIT Engineering and Services was established.</li>
+                        <li>2005 – Added office in Banpong Area near SCG Packaging.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2">
+                    <p>2006 – Appointed by Emerson Process Management as the local business partner for the Pulp and
+                        paper industry.</p>
+                    <p>2010 – Added another office in Khon Kaen (North east Thailand)</p>
+                    <p>2012 – Rented an office in Rayong and started selling valves and actuators in that area.</p>
+                    <p>2013 – Started to use ISO Standards for the whole company operations.</p>
+                    <p>2014 – Applied for the Bureau Veritas Seal for management system standards.</p>
+                    <p>2015 – Passed the Bureau Veritas Certification and was certified for Sales, installation and
+                        after sales.</p>
+                    <p>• Relocated the Rayong office to its current place with the new 500 sq.m workshop.</p>
+                    <p>2018 – Signed contract with PMT S.r.l</p>
+                    <p>2020 – Signed contract with Airaghi S.r.l.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50 border-t">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[#008000] text-3xl font-bold uppercase mb-4">Activities</h2>
+            <div class="w-full border-t border-dotted border-gray-400 mb-8 max-w-4xl mx-auto"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A1.jpg" class="w-full h-auto">
+                </div>
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A2.jpg" class="w-full h-auto">
+                </div>
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A3.jpg" class="w-full h-auto">
+                </div>
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A4.jpg" class="w-full h-auto">
+                </div>
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A5.jpg" class="w-full h-auto">
+                </div>
+                <div class="bg-white p-1 shadow-sm border border-gray-200">
+                    <img src="A6.jpg" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+
+            <div class="relative flex py-5 items-center mb-12">
+                <div class="flex-grow border-t border-dotted border-gray-400"></div>
+                <span
+                    class="flex-shrink mx-4 text-[#1a5d2c] text-3xl font-bold uppercase tracking-wide">Accomplishment</span>
+                <div class="flex-grow border-t border-dotted border-gray-400"></div>
+            </div>
+
+            <div class="mb-10">
+                <p class="text-gray-500 text-xs uppercase tracking-widest font-bold">
+                    PTTGC BRANCH#6 REFINERY PLANT TURNAROUND PROJECT
+                </p>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="relative group max-w-4xl w-full px-4">
+                    <div
+                        class="bg-white p-2 shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-sm transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="Cert.PTT.jpg" alt="PTTGC Certificate of Achievement"
+                            class="w-full h-auto border border-gray-100">
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <div class="inline-block w-12 h-1 bg-orange-500 mb-4"></div>
+                        <p class="text-gray-600 text-sm italic">
+                            "Awarded for Control Valve (Bettis) Overhaul and Inspection Service Package"
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="bg-[#0a2540] py-10 text-white text-center">
-    <div class="container mx-auto px-4">
-        
-        <div class="mb-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
-            <div class="flex justify-center space-x-3">
-                <a href="#" class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-facebook-f text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-youtube text-xl"></i>
-                </a>
+    <section class="bg-[#5a9ad4] py-6 text-center shadow-inner">
+        <h1 class="text-white text-3xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
+    </section>
+
+    <section class="bg-[#5a9ad4] pb-6">
+        <div class="container mx-auto flex flex-wrap justify-center gap-2">
+            <button
+                class="bg-[#ff6600] text-white px-5 py-2 text-xs font-bold uppercase rounded shadow-md">Home</button>
+            <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Khonkaen
+                Branch</button>
+            <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Ratchaburi
+                Branch</button>
+            <button class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition">Rayong
+                Branch</button>
+            <button
+                class="hover:bg-blue-600 text-white px-5 py-2 text-xs font-bold uppercase transition border-b-2 border-white">Bangkok
+                (Head Office)</button>
+        </div>
+    </section>
+
+    <section class="bg-[#345e82] py-12 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <div class="lg:w-1/2">
+                    <h2 class="text-xl font-bold mb-1 border-b border-gray-400 pb-2">Bangkok Head office Address</h2>
+
+                    <div class="mt-6 space-y-6 text-sm">
+                        <div>
+                            <p class="font-bold text-gray-200 uppercase mb-1">Address:</p>
+                            <p>75/76 ,Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-200 uppercase mb-1">Telephone :</p>
+                            <p>TEL : +66 2 9182060</p>
+                            <p>Fax : +66 2918 2062</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-gray-200 uppercase mb-1">E-mail:</p>
+                            <p>info@aitengineering.co.th</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-bold mt-10 mb-6">แผนที่และการเดินทาง</h3>
+                    <div class="rounded-lg overflow-hidden border-2 border-white/20 shadow-xl h-[300px] bg-gray-200">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0!2d100.7!3d13.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ4JzAwLjAiTiAxMDDCsDQyJzAwLjAiRQ!5e0!3m2!1sth!2sth!4v1711690000000!5m2!1sth!2sth"
+                            class="w-full h-full border-0" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <h2 class="text-xl font-bold mb-6">Contact Bangkok (Head office)</h2>
+
+                    <form class="space-y-4 text-gray-700">
+                        <div>
+                            <label class="block text-white text-xs mb-1 font-bold">Full Name</label>
+                            <input type="text" placeholder="Full Name"
+                                class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <div class="flex-1">
+                                <label class="block text-white text-xs mb-1 font-bold">Email</label>
+                                <input type="email" placeholder="Email"
+                                    class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                            <div class="flex-1">
+                                <label class="block text-white text-xs mb-1 font-bold">Tel.</label>
+                                <input type="text" placeholder="Tel"
+                                    class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-white text-xs mb-1 font-bold">Subject</label>
+                            <input type="text" placeholder="Subject"
+                                class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-white text-xs mb-1 font-bold">Message</label>
+                            <textarea rows="5" placeholder="Message"
+                                class="w-full px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-white text-xs font-bold mb-2">Send To</p>
+                            <ul class="text-xs space-y-1 text-gray-200">
+                                <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-2"></span>
+                                    info@aitengineering.co.th</li>
+                                <li class="flex items-center"><span class="w-2 h-2 bg-white rounded-full mr-2"></span>
+                                    support@aitengineering.co.th</li>
+                            </ul>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-[#5cb85c] hover:bg-green-600 text-white font-bold py-2 mt-4 transition rounded uppercase">
+                            Send
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
-            <p>
-                WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
-            </p>
-            <p class="text-sm font-medium">
-                +66 2 9182060
-            </p>
+    <footer class="bg-[#0a2540] py-10 text-white text-center">
+        <div class="container mx-auto px-4">
+
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
+
         </div>
+    </footer>
 
-    </div>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
