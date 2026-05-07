@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AIT Engineering and Service</title>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #center-toast .scale-90 {
+            transform: scale(0.9) translateY(10px);
+        }
+
+        #center-toast .scale-100 {
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+
+<body class="font-sans flex flex-col min-h-screen">
+
+    <div id="center-toast"
+        class="fixed inset-0 flex items-center justify-center z-[200] pointer-events-none opacity-0 transition-all duration-300">
+        <div
+            class="bg-stone-100/95 backdrop-blur-sm border border-gray-200 text-gray-700 px-6 py-3 rounded-full shadow-lg flex items-center gap-2 transform scale-90 transition-all duration-300">
+            <span class="font-bold text-sm">Added:</span>
+            <span id="toast-product-name"
+                class="text-xs font-bold text-center block w-full leading-relaxed break-words"></span>
+            <span class="text-xs text-green-600 font-bold ml-1">✓</span>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <div class="flex items-center space-x-3">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="hover:text-orange-500">Home</a>
+                <a href="about.html" class="hover:text-orange-500">About Us </a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
+
+                <a href="videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="activities.html" class="border-b-4 border-green-500 pb-1 text-orange-500 transition-colors duration-300 flex items-center gap-1">Activities</a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
+            </nav>
+
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white relative">
+    <div class="container mx-auto px-6 max-w-6xl">
+        
+        <div class="flex items-end justify-between mb-10 border-b border-gray-50 pb-6">
+            <div>
+                <h2 class="text-[#1a4066] text-2xl font-black uppercase tracking-tighter">Activities</h2>
+                <p class="text-orange-500 text-[9px] font-bold uppercase tracking-[0.3em] mt-1">********</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[600px]">
+            
+            <div class="md:row-span-2 group relative overflow-hidden rounded-[2rem] bg-gray-100 border border-gray-100 transition-all duration-500 hover:shadow-xl">
+                <img src="A1.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
+
+            <div class="md:col-span-2 group relative overflow-hidden rounded-[2rem] bg-gray-100 border border-gray-100 transition-all duration-500 hover:shadow-lg">
+                <img src="A2.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
+                    <span class="text-white text-[8px] font-black uppercase">Service</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[2rem] bg-gray-100 border border-gray-100 transition-all duration-500 hover:shadow-lg">
+                <img src="A3.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+
+            <div class="group relative overflow-hidden rounded-[2rem] bg-gray-100 border border-gray-100 transition-all duration-500 hover:shadow-lg">
+                <img src="A4.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+
+            </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 h-auto md:h-[250px]">
+             <div class="group relative overflow-hidden rounded-[2rem] bg-gray-100 border border-gray-100 shadow-sm transition-all duration-500 hover:shadow-lg">
+                <img src="A5.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <div class="group relative overflow-hidden rounded-[2rem] bg-[#1a4066] shadow-sm transition-all duration-500 hover:shadow-lg">
+                <img src="A6.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                    <p class="text-white text-[10px] font-black uppercase tracking-[0.4em]">Workshop</p>
+                    <div class="w-8 h-[1px] bg-orange-400 mt-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-24 bg-[#fafbfc] relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.05] pointer-events-none" 
+         style="background-image: linear-gradient(#1a4066 0.5px, transparent 0.5px), linear-gradient(90deg, #1a4066 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+
+    <div class="absolute top-0 right-0 w-80 h-80 bg-blue-100/40 rounded-full blur-[100px] -z-10 animate-pulse-slow"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-orange-100/30 rounded-full blur-[100px] -z-10 animate-pulse-slow delay-700"></div>
+
+    <div class="container mx-auto px-6 max-w-5xl relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
+            
+            <div class="order-2 md:order-1 space-y-12 relative">
+                <div class="absolute -left-6 top-0 h-full flex gap-1 opacity-60">
+                    <div class="w-[1px] h-full border-l border-dashed border-gray-200"></div>
+                    <div class="w-[1px] h-full border-l border-dashed border-gray-200"></div>
+                </div>
+
+                <div class="pl-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_10px_rgba(251,146,60,0.8)] animate-pulse"></span>
+                        <span class="text-orange-600 text-[10px] font-black uppercase tracking-[0.5em]">Project Success</span>
+                    </div>
+                    <h2 class="text-[#1a4066] text-4xl md:text-5xl font-black uppercase tracking-tighter leading-[0.85]">
+                        Accomplishment <br>
+                        <span class="text-blue-300 font-medium italic opacity-60 text-3xl md:text-4xl">Certificate No. 01.</span>
+                    </h2>
+                </div>
+                
+                <div class="space-y-5 pl-2">
+                    <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] font-bold opacity-70 border-l-2 border-gray-100 pl-4">Project Site / 2026</p>
+                    <h3 class="text-[#1a4066] text-base font-bold uppercase leading-tight max-w-sm">
+                        PTTGC BRANCH#6 REFINERY PLANT <br>
+                        <span class="text-gray-400 font-medium">Turnaround Project</span>
+                    </h3>
+                    <p class="text-gray-500 text-xs font-light leading-relaxed max-w-xs opacity-80">
+                        Received the Award for Highest Efficiency in Project Management.
+                    </p>
+                </div>
+
+                <div class="pt-8 border-t border-gray-100 pl-2">
+                    <p class="text-[#1a4066]/80 text-xl font-light italic leading-relaxed max-w-sm relative">
+                        <span class="absolute -left-5 top-0 text-orange-200 text-4xl font-serif opacity-50">“</span>
+                        Awarded for <br class="hidden md:block"> Control Valve Overhaul <br class="hidden md:block"> and Inspection Service
+                        <span class="absolute -right-5 bottom-0 text-orange-200 text-4xl font-serif rotate-180 opacity-50">“</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 group relative">
+                <div class="absolute -inset-16 bg-gradient-to-tr from-blue-100/10 via-white/5 to-orange-100/10 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                
+                <div class="absolute top-6 left-6 inset-0 bg-[#1a4066]/5 rounded-3xl -z-10 transition-transform duration-700 group-hover:translate-x-3 group-hover:translate-y-3"></div>
+                
+                <div class="relative bg-white p-3 rounded-[2rem] shadow-[0_30px_70px_rgba(0,0,0,0.06)] border border-white transition-all duration-700 group-hover:shadow-[0_50px_90px_rgba(251,146,60,0.12)] group-hover:-translate-y-4 group-hover:rotate-1">
+                    <div class="border border-gray-50 rounded-2xl p-4 md:p-8 shadow-inner relative bg-gray-50/50">
+                        <img src="Cert.PTT.jpg" class="w-full h-auto rounded-xl shadow-inner border border-gray-100/50">
+                        
+                        <div class="absolute top-2 left-2 w-5 h-5 border-t-2 border-l-2 border-[#1a4066]/15"></div>
+                        <div class="absolute bottom-2 right-2 w-5 h-5 border-b-2 border-r-2 border-[#1a4066]/15"></div>
+                    </div>
+                </div>
+                
+                <span class="absolute -bottom-20 -right-20 text-[220px] font-black text-[#1a4066] opacity-[0.02] select-none -rotate-12">CERTIFICATE</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-[#0a2540] py-10 text-white text-center mt-auto w-full">
+        <div class="container mx-auto px-4">
+
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

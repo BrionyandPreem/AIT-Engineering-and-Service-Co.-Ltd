@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AIT Engineering and Service</title>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #center-toast .scale-90 {
+            transform: scale(0.9) translateY(10px);
+        }
+
+        #center-toast .scale-100 {
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+
+<body class="font-sans flex flex-col min-h-screen">
+
+    <div id="center-toast"
+        class="fixed inset-0 flex items-center justify-center z-[200] pointer-events-none opacity-0 transition-all duration-300">
+        <div
+            class="bg-stone-100/95 backdrop-blur-sm border border-gray-200 text-gray-700 px-6 py-3 rounded-full shadow-lg flex items-center gap-2 transform scale-90 transition-all duration-300">
+            <span class="font-bold text-sm">Added:</span>
+            <span id="toast-product-name"
+                class="text-xs font-bold text-center block w-full leading-relaxed break-words"></span>
+            <span class="text-xs text-green-600 font-bold ml-1">✓</span>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <div class="flex items-center space-x-3">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="hover:text-orange-500">Home</a>
+                <a href="about.html" class="hover:text-orange-500">About Us </a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
+
+                <a href="videos.html" class="border-b-4 border-green-500 pb-1 text-orange-500 transition-colors duration-300 flex items-center gap-1">Videos</a>
+                <a href="activities.html" class="hover:text-orange-500">Activities</a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
+            </nav>
+
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white relative overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-blue-50/50 rounded-full blur-[100px] -z-10"></div>
+        <div class="container mx-auto px-6 max-w-6xl text-center">
+            <h2 class="text-[#1a4066] text-[10px] font-black uppercase tracking-[0.5em] mb-4 opacity-40">Media Showcase</h2>
+            <div class="w-16 h-1 bg-gray-100 mx-auto mt-6"></div>
+        </div>
+    </section>
+
+    <section class="pb-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="relative group rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-900/15 border-8 border-white">
+                <div class="aspect-video bg-gray-50">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8unuh4H2OY8?si=gMskxhQKrZO7Vh0G" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="absolute inset-0 border border-white/20 pointer-events-none rounded-[2rem]"></div>
+            </div>
+            
+            <div class="mt-10 flex flex-col md:flex-row justify-between items-start gap-6">
+                <div class="max-w-2xl">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="bg-orange-500 w-2 h-2 rounded-full animate-pulse"></span>
+                        <span class="text-orange-500 text-[10px] font-black uppercase tracking-widest">Main Highlight</span>
+                    </div>
+                    <h3 class="text-[#1a4066] text-2xl font-black uppercase tracking-tight leading-none">BETTIS CBA fail mode revesal by AIT</h3>
+                    <p class="text-gray-400 text-sm mt-3 font-light leading-relaxed">This video demonstrates the disassembly and mode selection of the Bettis CBA (PA Series) by the AIT Engineering technical team.</p>
+                </div>
+                <div class="flex items-center gap-4 py-2 px-6 bg-gray-50 rounded-full border border-gray-100">
+                    <div class="w-8 h-8 rounded-full bg-[#1a4066] flex items-center justify-center text-white text-[10px] font-bold">AIT</div>
+                    <a href="http://www.youtube.com/@aitengineering2960" target="_blank" class="text-[#1a4066] text-[11px] font-black uppercase tracking-widest">AIT ENGINEERING</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#fafbfc]">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex items-center gap-6 mb-16">
+                <h2 class="text-[#1a4066] text-xl font-black uppercase tracking-tighter italic">Explore More</h2>
+                <div class="flex-1 h-[1px] bg-gray-200"></div>
+                <span class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.4em]">Library</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+                
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7yhFUnzjqSs?si=8dj3ELETtwLBHbJG" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">Bettis MOV wireless control by AIT</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Tutorial • 12K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gaC0qWjnN_U?si=qj-bqB5d3aI64ZIV" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">WESTLOCK ICOT5000 BASIC STARTUP by AIT</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Service • 8K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QkgfeQG2QWk?si=I1HK9y7iNoCLMW0k" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">PM16 POWDER MIX TANK AGITATOR NEW DESIGN 100 RPM</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Facility • 5K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                        <iframe width="100%" height="100%" 
+                        src="https://www.youtube.com/embed/PFeigONj4y0?si=ja-Oc6cQfmwCOiKW" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">PM16 POWDER MIX TANK AGITATOR EXISTING DESIGN 100 RPM</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Tutorial • 12K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6Xdb3gx4MZI?si=_kQ22aJikNAos2U9" 
+                       title="YouTube video player" frameborder="0" 
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">PM16 POWDER MIX TANK AGITATOR EXISTING CURRENT CONFIGURE 100RPM</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Service • 8K views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-blue-900/10 group-hover:-translate-y-1">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kiUZxJ-760g?si=lPzaDdOXZgFmJkjF" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="flex gap-4 mt-5 items-start">
+                        <div class="w-9 h-9 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0 group-hover:border-[#1a4066] transition-colors">
+                            <span class="text-[#1a4066] font-bold text-[10px]">AIT</span>
+                        </div>
+                        <div>
+                            <h4 class="text-[#1a4066] text-sm font-black leading-snug mb-1 group-hover:text-blue-600 transition-colors">PM16 POWDER MIX TANK AGITATOR NEW DESIGN 300 RPM</h4>
+                            <p class="text-gray-400 text-[10px] font-medium uppercase tracking-widest">Facility • 5K views</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0a2540] py-10 text-white text-center mt-auto w-full">
+        <div class="container mx-auto px-4">
+
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

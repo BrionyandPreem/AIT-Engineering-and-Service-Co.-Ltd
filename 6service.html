@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>AIT Engineering and Service</title>
+
+    <style>
+        .hero-bg {
+            /* ปรับแต่ง Gradient และรูปภาพให้ดู Modern ขึ้น */
+            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)),
+                url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* เพิ่มลูกเล่นเวลา Scroll */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <div class="flex items-center space-x-3">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
+                <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
+                <a href="about.html" class="hover:text-orange-500">About Us </a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
+
+                <a href="videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="activities.html" class="hover:text-orange-500">Activities</a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
+            </nav>
+
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-12 bg-[#fafafa]">
+        <h2 class="text-3xl font-bold text-center text-sky-600 mb-10">OUR SERVICES</h2>
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2">
+                <div class="relative group">
+                    <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-orange-200 rounded-[2.5rem] -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                    <img src="Service.jpg" alt="AIT Engineering Service" 
+                        class="w-full h-auto rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.08)] object-cover">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-8">
+                <div class="space-y-4">
+                    <h4 class="text-3xl font-medium text-gray-800 leading-tight">
+                        Leading Instrument <br>& Service Provider
+                    </h4>
+                    <p class="text-gray-500 font-light leading-relaxed text-lg">
+                        AIT Engineering and Service aims to be the premier provider of Field Instruments, Analyzers, and Actuation Technologies. We deliver the best solutions through our well-trained staff and successfully proven products.
+                    </p>
+                    
+                    <div class="pl-6 border-l-2 border-orange-400 py-2">
+                        <p class="text-gray-600 italic font-light">
+                            "We make customers trust us through quality work and integrity."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 gap-5">
+                    <div class="flex items-center gap-4 p-5 bg-white rounded-[1.5rem] shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600">
+                            <span class="text-sm font-bold">01</span>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">Instrument & Actuation Solutions</p>
+                            <p class="text-xs text-gray-400">Field Instruments, Analyzers, and Transmitters</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 bg-white rounded-[1.5rem] shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
+                            <span class="text-sm font-bold">02</span>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">Preventive Maintenance & Safety</p>
+                            <p class="text-xs text-gray-400">High standards and safety protocols in every task</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 bg-white rounded-[1.5rem] shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-50 rounded-2xl flex items-center justify-center text-green-600">
+                            <span class="text-sm font-bold">03</span>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">Technical Support & Training</p>
+                            <p class="text-xs text-gray-400">Expertise from our well-trained professional staff</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <a href="contact.html" class="inline-flex items-center gap-3 bg-green-600 hover:bg-orange-600 text-white px-12 py-4 rounded-full text-sm font-bold tracking-[0.2em] transition-all hover:scale-105">
+                        CONNECT WITH US 
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0a2540] py-10 text-white text-center">
+        <div class="container mx-auto px-4">
+
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
