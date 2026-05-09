@@ -12,43 +12,219 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+        --navy: #1a4066;
+        --orange: #e86c2c;
+        --green: #2a9d6a;
+        --text: #2c2c2a;
+        --muted: #5f5e5a;
+        --subtle: #888780;
+        --surface: #f8f7f4;
+        --border: rgba(0,0,0,0.09);
+        --radius: 10px;
+        }
+
         body {
-            font-family: 'Inter', 'Sarabun', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            color: #4a4a4a;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: var(--text);
+        background: #fff;
+        font-size: 15px;
+        line-height: 1.7;
         }
 
-        .text-navy {
-            color: #003366;
+        .label {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--subtle);
+        font-weight: 500;
         }
 
-        .text-orange {
-            color: #FF6600;
+        .divider {
+        width: 32px;
+        height: 2px;
+        background: var(--orange);
+        margin: 0.85rem 0;
         }
 
-        .bg-navy {
-            background-color: #003366;
+        /* ── WHO WE ARE ── */
+        .who {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 5rem 2rem;
         }
 
-        .bg-orange {
-            background-color: #FF6600;
+        .who h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 1.1rem;
         }
 
-        p {
-            line-height: 1.8;
-            letter-spacing: 0.01em;
+        .who p.body {
+        color: var(--muted);
+        margin-bottom: 2rem;
+        max-width: 640px;
         }
 
-        .hero-bg {
-            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)),
-                url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+        blockquote {
+        border-left: 2px solid var(--orange);
+        padding: 0.85rem 1.25rem;
+        background: var(--surface);
+        border-radius: 0 var(--radius) var(--radius) 0;
+        margin-bottom: 2.5rem;
         }
 
-        html {
-            scroll-behavior: smooth;
+        blockquote p { font-size: 14px; color: var(--muted); font-style: italic; }
+        blockquote cite { display: block; font-size: 12px; color: var(--subtle); margin-top: 0.5rem; font-style: normal; }
+
+        .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        }
+
+        .card {
+        padding: 1.4rem 1.5rem;
+        background: #fff;
+        border: 0.5px solid var(--border);
+        border-radius: var(--radius);
+        }
+
+        .card.navy-top { border-top: 2px solid var(--navy); }
+        .card.green-top { border-top: 2px solid var(--green); }
+
+        .card .label { margin-bottom: 0.85rem; }
+
+        .card p { font-size: 14px; color: var(--muted); font-style: italic; }
+
+        .card ul {
+        list-style: none;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 2.1;
+        }
+
+        /* ── MILESTONES ── */
+        .history {
+        background: var(--surface);
+        padding: 5rem 2rem;
+        border-top: 0.5px solid var(--border);
+        }
+
+        .history-inner {
+        max-width: 780px;
+        margin: 0 auto;
+        }
+
+        .history-inner .label { text-align: center; }
+        .history-inner .divider { margin: 0.85rem auto; }
+        .history-inner h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--navy);
+        text-align: center;
+        margin-bottom: 3rem;
+        }
+
+        .timeline {
+        position: relative;
+        padding-left: 1.75rem;
+        }
+
+        .timeline::before {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        bottom: 0;
+        width: 1px;
+        background: var(--border);
+        }
+
+        .titem {
+        position: relative;
+        margin-bottom: 2.25rem;
+        display: flex;
+        gap: 1.1rem;
+        }
+
+        .titem:last-child { margin-bottom: 0; }
+
+        .tdot {
+        flex-shrink: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ccc;
+        margin-top: 5px;
+        }
+
+        .tdot.accent { background: var(--orange); }
+
+        .tyear {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        color: var(--subtle);
+        margin-bottom: 0.3rem;
+        }
+
+        .tyear.accent { color: var(--orange); }
+
+        .tbody {
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.75;
+        }
+
+        .tbody ul {
+        list-style: none;
+        margin-top: 0.2rem;
+        }
+
+        .tbody ul li::before {
+        content: '—';
+        margin-right: 0.5rem;
+        color: var(--border);
+        }
+
+        /* ── BRANDS ── */
+        .brands {
+        padding: 3.5rem 2rem;
+        border-top: 0.5px solid var(--border);
+        }
+
+        .brands-inner {
+        max-width: 780px;
+        margin: 0 auto;
+        text-align: center;
+        }
+
+        .brands-inner .label { margin-bottom: 1.5rem; }
+
+        .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        justify-content: center;
+        }
+
+        .pill {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+        background: var(--surface);
+        padding: 6px 14px;
+        border-radius: 6px;
+        border: 0.5px solid var(--border);
+        }
+
+        @media (max-width: 520px) {
+        .cards { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -189,175 +365,147 @@
         </div>
     </header>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-12 gap-12 items-start">
+    <div class="min-h-screen bg-gradient-to-br from-[#f8fafc] via-[#eff6ff] to-[#fdf2f8] font-sans text-gray-800">
 
-            <div class="md:col-span-4 mt-2">
-                <div class="border-l-4 border-orange-500 pl-6 py-2">
-                    <h4 class="text-lg font-bold text-[#1a4066] uppercase tracking-wide">Management Message</h4>
-                    <p class="text-gray-500 text-sm italic mt-4 leading-relaxed">
-                        "We believe in values of people. We make customer trust us on quality work. We believe in
-                        integrity."
-                    </p>
-                </div>
-            </div>
+    <section class="py-24 text-center relative">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[#1a4066] text-4xl md:text-5xl font-black uppercase tracking-[0.3em] mb-4">About US AIT</h1>
+            <div class="h-[1px] w-40 bg-gradient-to-r from-transparent via-[#1a4066] to-transparent mx-auto opacity-30"></div>
+        </div>
+    </section>
 
-            <div class="md:col-span-8 space-y-10">
-                <div>
-                    <h2 class="text-3xl font-bold text-[#1a4066] mb-6 uppercase">Who We Are</h2>
-                    <p class="text-gray-600 font-light leading-loose text-base">
-                        AIT Engineering and Service Co., Ltd. aims to be Thailand's leading instrument and service
-                        provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies in various
-                        industries. We offer the best solution to our customers with our well trained staffs and
-                        successfully proven products.
+    <section class="py-12 relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="backdrop-blur-md bg-white/40 p-8 rounded-[2rem] border border-white/60 shadow-xl shadow-blue-900/5 transition-all hover:bg-white/60">
+                    <h3 class="text-[#1a4066]/60 font-bold uppercase text-[10px] mb-6 tracking-[0.2em]">Message From Management</h3>
+                    <p class="text-gray-700 text-lg italic leading-relaxed">
+                        "We believe in values of people. We make customer trust us on quality work. We believe in integrity."
                     </p>
                 </div>
 
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div class="p-8 bg-gray-50 border-t-4 border-[#1a4066] shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-[#1a4066] font-bold mb-4 uppercase text-xs tracking-[0.2em]">Vision</h3>
-                        <p class="text-gray-600 font-light italic leading-relaxed">"Creative Innovations for Sustainable
-                            Industry"</p>
-                    </div>
+                <div class="backdrop-blur-lg bg-[#1a4066]/90 p-8 rounded-[2rem] shadow-2xl shadow-blue-900/20 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                    <h3 class="text-blue-200/70 font-bold uppercase text-[10px] mb-6 tracking-[0.2em]">Vision</h3>
+                    <p class="text-2xl font-bold leading-tight">
+                        Creative Innovations for <span class="text-blue-300">Sustainable</span> Industry
+                    </p>
+                </div>
 
-                    <div class="p-8 bg-gray-50 border-t-4 border-green-500 shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-[#1a4066] font-bold mb-4 uppercase text-xs tracking-[0.2em]">Our Value</h3>
-                        <ul class="text-sm text-gray-600 space-y-3 font-light">
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">•</span> Family culture
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">•</span> Honesty, Integrity, and fairness
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">•</span> Continuous development & excellence
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-green-500">•</span> High standard & safety
-                            </li>
-                        </ul>
+                <div class="backdrop-blur-md bg-white/40 p-8 rounded-[2rem] border border-white/60 shadow-xl shadow-blue-900/5 transition-all hover:bg-white/60">
+                    <h3 class="text-[#1a4066]/60 font-bold uppercase text-[10px] mb-6 tracking-[0.2em]">Value</h3>
+                    <ul class="space-y-4 text-gray-600 text-[13px]">
+                        <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>Family culture:</strong> Building a supportive workplace.</li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>Ethics:</strong> Honesty, Integrity, and fairness in every transaction.</li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>Growth:</strong> Strive for development, focus on learning, and achieve excellence.</li>
+                        <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>Safety:</strong> High standard work without compromising safety.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row gap-20">
+                
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <h2 class="text-[#1a4066] text-3xl font-black mb-6 uppercase tracking-tight">History & Expertise</h2>
+                        <div class="w-16 h-1 bg-[#1a4066] mb-8"></div>
+                    </div>
+                    
+                    <div class="text-gray-700 space-y-6 text-[15px] leading-relaxed">
+                        <p class="text-gray-900 font-bold text-xl">Established in September 2002</p>
+                        <p>
+                            <strong>AIT Engineering and Service Co., Ltd.</strong> aims to be Thailand’s leading instrument and service provider for Field Instruments, Analyzers, Transmitters and Actuation Technologies in various industries.
+                        </p>
+                        <p>Providing engineering and services to meet growing customer demands.</p>
+                        
+                        <div class="p-8 bg-gradient-to-br from-white/80 to-white/40 backdrop-blur-sm rounded-[2rem] border border-white shadow-inner">
+                            <h4 class="text-[#1a4066] font-bold text-[10px] uppercase mb-4 tracking-[0.2em] opacity-50 text-center lg:text-left">Global Portfolio</h4>
+                            <p class="text-gray-500 italic leading-relaxed text-sm">
+                                BETTIS, EIM, EL O MATIC, SHAFER, and HYTORK (Actuation), ROSEMOUNT (Field Instruments), MICROMOTION (Flow) and CAMILLE BAUER (Isolators and Angle transmitters).
+                            </p>
+                        </div>
+
+                        <p>
+                            <strong>Water resource management</strong> impacts a lot in industrial processes. We partnered with waste water treatment solution experts in expanding our services and offerings for DAP floats and trenners.
+                        </p>
+                        <p>
+                            We offer the best solution to our customers with our well trained staffs and successfully proven products. We have the right people with the right products for demanding processes. We are confident to provide our expertise to our customers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="text-[#1a4066] text-3xl font-black mb-12 uppercase tracking-tight">Milestones</h2>
+                    <div class="relative border-l border-[#1a4066]/10 ml-4 space-y-10 pl-10">
+                        
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-blue-300 rounded-full ring-8 ring-blue-50/50"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2002</span> – AIT Engineering and Services was established.</p></div>
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2005</span> – Added office in Banpong Area near SCG Packaging</p></div>
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2006</span> – Appointed by Emerson Process Management as local partner</p></div>
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2010</span> – Added office in Khon Kaen (Northeast Thailand)</p></div>
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2012</span> – Opened Rayong office for valves and actuators</p></div>
+                        
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-blue-400 rounded-full ring-8 ring-blue-50/50"></span><p class="text-[#1a4066] font-bold">2013 – ISO Standards implementation for the whole company.</p></div>
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2014</span> – Applied for Bureau Veritas Seal</p></div>
+
+                        <div class="relative p-8 bg-white/60 backdrop-blur-md rounded-3xl border border-white shadow-sm">
+                            <span class="absolute -left-[50px] top-10 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-md"></span>
+                            <p class="font-black text-[#1a4066] mb-4 text-xl tracking-tight">2015</p>
+                            <ul class="text-[13px] text-gray-600 space-y-3 list-disc list-inside leading-relaxed">
+                                <li>Passed the Bureau Veritas Certification and was certified for Sales, installation and after sales of measuring devices and Automation systems.</li>
+                                <li>Relocated the Rayong office to its current place with the new 500 sq.m workshop and 5 ton overhead crane for the service team.</li>
+                                <li>Appointed local business partner of UMV</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-[#1a4066]/20 rounded-full"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2018</span> – Signed contract with PMT S.r.l</p></div>
+                        <div class="relative group"><span class="absolute -left-[45px] top-1.5 w-2 h-2 bg-blue-400 rounded-full ring-8 ring-blue-50/50"></span><p class="text-gray-600"><span class="text-[#1a4066] font-bold">2020</span> – Signed contract with Airaghi S.r.L. (refiner plate), Weidmuller (DCS & power supply)</p></div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-gray-50 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-center text-navy font-semibold text-3xl mb-16 uppercase tracking-wider">History & Milestones
-            </h2>
+</div>
 
-            <div class="space-y-0 border-l border-gray-200 ml-4 md:ml-0">
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2002</div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-orange before:rounded-full">
-                        <span class="md:hidden font-bold text-orange">2002</span>
-                        <h4 class="font-semibold text-gray-800 uppercase text-sm mb-2">Foundation</h4>
-                        <p class="text-gray-600 font-light">AIT Engineering and Services was established in September.
-                            Aims to be Thailand's leading instrument and service provider for Field Instruments,
-                            Analyzers, Transmitters and Actuation Technologies.</p>
-                    </div>
-                </div>
+    <footer class="bg-[#0a2540] py-10 text-white text-center mt-auto w-full">
+        <div class="container mx-auto px-4">
 
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2005</div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
-                        <span class="md:hidden font-bold text-orange">2005</span>
-                        <p class="text-gray-600 font-light">Added office in Banpong Area near SCG Packaging to expand
-                            service coverage.</p>
-                    </div>
-                </div>
-
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2006</div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
-                        <span class="md:hidden font-bold text-orange">2006</span>
-                        <p class="text-gray-600 font-light">Appointed by Emerson Process Management as the local
-                            business partner for the Pulp and paper industry.</p>
-                    </div>
-                </div>
-
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2010</div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
-                        <span class="md:hidden font-bold text-orange">2010</span>
-                        <p class="text-gray-600 font-light">Added another office in Khon Kaen to serve customers in
-                            North East Thailand.</p>
-                    </div>
-                </div>
-
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl">2012</div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
-                        <span class="md:hidden font-bold text-orange">2012</span>
-                        <p class="text-gray-600 font-light">Rented an office in Rayong and started selling valves and
-                            actuators in the Eastern Seaboard area.</p>
-                    </div>
-                </div>
-
-                <div class="relative pb-12 md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl italic text-sm">2013-15
-                    </div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-gray-300 before:rounded-full group-hover:before:bg-orange transition-all">
-                        <span class="md:hidden font-bold text-orange">2013-2015</span>
-                        <h4 class="font-semibold text-gray-800 uppercase text-xs mb-2">Quality & Certification</h4>
-                        <ul class="text-gray-600 font-light space-y-2">
-                            <li>• 2013: Started to use ISO Standards for the whole company operations.</li>
-                            <li>• 2014: Applied for the Bureau Veritas Seal for management system standards.</li>
-                            <li>• 2015: Passed the Bureau Veritas Certification for Sales, installation and after sales.
-                            </li>
-                            <li>• 2015: Relocated the Rayong office to its current place with the new 500 sq.m workshop.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="relative md:grid md:grid-cols-6 items-baseline group">
-                    <div class="hidden md:block text-right pr-10 font-bold text-navy text-xl italic text-sm">2018-20
-                    </div>
-                    <div
-                        class="md:col-span-5 pl-8 relative before:absolute before:left-[-5px] before:top-2 before:w-[10px] before:h-[10px] before:bg-navy before:rounded-full">
-                        <span class="md:hidden font-bold text-orange">2018-2020</span>
-                        <h4 class="font-semibold text-gray-800 uppercase text-xs mb-2">Global Partnership</h4>
-                        <p class="text-gray-600 font-light">Signed official contracts with PMT S.r.l (2018) and Airaghi
-                            S.r.l. (2020) to expand high-end industrial solutions.</p>
-                    </div>
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="py-16 bg-white border-t border-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h3 class="text-center text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10">Our Strategic
-                Brands</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 text-center items-center opacity-60">
-                <span class="font-bold text-navy text-xs">BETTIS</span>
-                <span class="font-bold text-navy text-xs">ROSEMOUNT</span>
-                <span class="font-bold text-navy text-xs">MICROMOTION</span>
-                <span class="font-bold text-navy text-xs">SHAFER</span>
-                <span class="font-bold text-navy text-xs">EL-O-MATIC</span>
-                <span class="font-bold text-navy text-xs">HYTORK</span>
-                <span class="font-bold text-navy text-xs">CAMILLE BAUER</span>
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
             </div>
-        </div>
-    </section>
 
-    <footer class="py-16 text-center bg-white border-t border-gray-50">
-        <p class="text-gray-400 text-sm mb-8 font-light">Providing engineering and services to meet growing customer
-            demands.</p>
-        <a href="contact.html"
-            class="inline-block border border-navy text-navy px-12 py-3 text-xs font-bold tracking-widest hover:bg-navy hover:text-white transition-all duration-300">
-            CONTACT US
-        </a>
+        </div>
     </footer>
 
 </body>
-
 </html>

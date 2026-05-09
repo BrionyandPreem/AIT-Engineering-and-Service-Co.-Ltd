@@ -278,8 +278,34 @@ function filterByCategory(categoryName) {
         filteredProducts = [...products];
     } else {
         filteredProducts = products.filter(item => {
-            const tags = String(item.categoryTag).toLowerCase();
-            return tags.includes(searchCat);
+            if (!item.categoryTag) return false;
+
+            const tagsString = String(item.categoryTag).toLowerCase().trim();
+            // แยกแท็กใน JSON ออกมาเป็นลิสต์ (Array)
+            const tagsArray = tagsString.split(',').map(t => t.trim());
+
+            // --- 1. โซนดักคำว่า "Valves" (หรือ Valve) ---
+            if (searchCat === 'valves' || searchCat === 'valve') {
+                return tagsArray.some(tag => {
+                    // ต้องมีคำว่า valve แต่ "ต้องไม่มี" คำว่า accessories หรือ access อยู่ในแท็กนั้น
+                    return tag.includes('valve') && 
+                           !tag.includes('accessories') && 
+                           !tag.includes('access');
+                });
+            }
+
+            // --- 2. โซนดักคำว่า "Flow" (เหมือนเดิมที่เคยทำไว้จ้ะ) ---
+            if (searchCat === 'flow') {
+                return tagsArray.some(tag => {
+                    return tag.includes('flow') && !tag.includes('mass');
+                });
+            }
+
+            // --- 3. โซนหมวดหมู่อื่นๆ (รวมถึงพวก Transducers และ Valve Accessories เอง) ---
+            // ส่วนนี้จะปล่อยให้มันหาแบบปกติ เพื่อให้อันยาวๆ เปิดได้จ้ะ
+            return tagsArray.some(tag => {
+                return tag === searchCat || tag.includes(searchCat);
+            });
         });
     }
 
